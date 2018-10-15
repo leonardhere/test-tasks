@@ -167,6 +167,7 @@ header[role=banner]::after {
   -webkit-transition: opacity 0.3s 0, visibility 0 0;
   -moz-transition: opacity 0.3s 0, visibility 0 0;
   transition: opacity 0.3s 0, visibility 0 0;
+  z-index: 99;
 }
 .cd-user-modal.is-visible .cd-user-modal-container {
   -webkit-transform: translateY(0);
@@ -217,7 +218,7 @@ header[role=banner]::after {
   height: 50px;
   line-height: 50px;
   background: #d2d8d8;
-  color: #809191;
+  color: #87CEFA;;
 }
 .cd-user-modal-container .cd-switcher a.selected {
   background: #FFF;

@@ -272,15 +272,20 @@ header {
 
 .menu_lk:after {
 	content: '';
-    display: inline-block;
-    background-image: url(../img/door.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 16px;
-    width: 16px;
-    margin-left: 10px;
+	display: inline-block;
+	background-image: url(../img/door.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 16px;
+	width: 16px;
+	margin-left: 10px;
+	transition: filter .3s linear;
+	vertical-align: sub;
 }
 
+.menu_lk:hover::after{
+	filter: invert(100%);
+}
 /* banner ==========================================*/
 
 .banner {
@@ -330,6 +335,7 @@ header {
 	    -ms-flex-align: center;
 	        align-items: center;
 	margin: 0 auto 150px;
+
 }
 .heading h2 {
 	width: 200px;
@@ -521,7 +527,7 @@ header {
 .service-list__item {
 	padding: 0 15px;
 	width: 70%;
-	margin-left: 13%;
+	margin-left: 18%;
 }
 .service-list__item:hover .service-list__icon {
 	background:	#87CEFA;
@@ -599,11 +605,27 @@ header {
 	    -ms-flex-align: start;
 	        align-items: flex-start;
 	text-align: center;
-	margin-left: 13%;
+	margin-left: 18%;
 	-webkit-box-flex: 0;
 	-ms-flex: none;
 	flex: none;
-	padding-top: 120px;
+	padding-top: 50px;
+}
+
+
+.pricingnew {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	text-align: center;
+	margin-left: 12%;
+	-webkit-box-flex: 0;
+	-ms-flex: none;
+	flex: none;
+	padding-top: 50px;
 }
 
 .pricing__item {

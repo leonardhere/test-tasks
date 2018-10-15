@@ -8,22 +8,17 @@ jQuery(document).ready(function($){
 		$tab_signup = $form_modal_tab.children('li').eq(1).children('a'),
 		$forgot_password_link = $form_login.find('.cd-form-bottom-message a'),
 		$back_to_login_link = $form_forgot_password.find('.cd-form-bottom-message a'),
-		$main_nav = $('.navigation');
+		$main_nav = $('.navigation .cd-signin');
 
 	//открыть модальное окно
 	$main_nav.on('click', function(event){
 
-		if( $(event.target).is($main_nav) ) {
-			// открыть на мобильных подменю
-			$(this).children('ul').toggleClass('is-visible');
-		} else {
-			// закрыть подменю на мобильных
-			$main_nav.children('ul').removeClass('is-visible');
-			//показать модальный слой
-			$form_modal.addClass('is-visible');	
-			//показать выбранную форму
-			( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
-		}
+		$form_modal.addClass('is-visible');	
+		login_selected()
+
+		// закрыть на мобильных подменю
+		$('.menu-toggle').removeClass('active')
+		$('.menu').slideUp(400)
 
 	});
 
