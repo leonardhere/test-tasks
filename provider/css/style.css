@@ -61,6 +61,10 @@ p {
 	background-color: #e6e6e6;
 }
 
+#newfont {
+	font-size: 35px;
+}
+
 
 .slideone .slide-image{
 	background: url("../img/slideone.jpg") no-repeat center top;
@@ -228,8 +232,8 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 190px;
-    height: 150px;
+    width: 320px;
+    height: 250px;
     background-image: url(../img/Stream_logo.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -335,7 +339,7 @@ header {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	margin: 100px auto 100px;
+	margin: 15px auto 70px;
 
 }
 .heading h2 {
@@ -528,6 +532,11 @@ header {
 	margin-top: 50px;
 }
 
+#fourblock {
+	margin-left: 10%;
+}
+
+
 .box-pricing .service-list__icon {
 	margin-left: 0;
 	height: 125px;
@@ -553,7 +562,7 @@ header {
 	    -ms-flex-align: start;
 	        align-items: flex-start;
 	text-align: center;
-	margin-left: 18%;
+	margin-left: 21%;
 	-webkit-box-flex: 0;
 	-ms-flex: none;
 	flex: none;
@@ -787,10 +796,10 @@ header {
 	padding-top: 8px;
 }
 .contact-wrap__left {
-	width: 53%;
+	width: 50%;
 }
 .contact-wrap__right {
-	width: 47%;
+	width: 50%;
 	-ms-flex-negative: 47%;
 	    flex-shrink: 47%;
 	padding-left: 60px;
@@ -966,7 +975,13 @@ header {
 	.banner {
 		/* min-height: 850px; */
 	}
+
+	#map {
+		height: 250px;
+		width: 250px;
+	}
 }
+
 @media (max-width: 1199px) {
 	header {
 		top: 40px;
@@ -994,7 +1009,13 @@ header {
 	.menu__item:after {
 		margin-left: 20px;
 	}
+
+	#newfont {
+		font-size: 24px;
+	}
+
 	.heading {
+		margin-top: -100px;
 		margin-bottom: 110px;
 	}
 	.heading h2 {
@@ -1126,9 +1147,10 @@ header {
 	.about-wrap-img {
 		margin: 40px auto 0;
 		max-width: 80%;
+		margin-left: 33%
 	}
 	.about-wrap-img img {
-		width: 100%;
+		width: 50%;
 	}
 	.box-skills__item--img {
 		margin: 0 auto 40px;
@@ -1204,6 +1226,9 @@ header {
 	}
 	.box-pricing .service-list__icon {
 		margin-left: auto;
+	}
+	#fourblock {
+
 	}
 	.pricing {
 		margin-left: 0;
@@ -1401,6 +1426,7 @@ header {
 		margin: 0 auto;
 		max-width: 420px;
 	}
+
 	.pricing__item:first-child {
 		border-right: 1px solid #e6e6e6;
 		margin-top: 0px;
@@ -1471,6 +1497,7 @@ header {
 	}
 	#map {
 		height: 320px;
+		overflow: hidden;
 	}
 	#map:before, #map:after {
 		display: none;
@@ -1499,6 +1526,11 @@ header {
 	}
 	.facts-list__item {
 		width: auto;
+	}
+	#map {
+		width: 350px;
+		height: 300px;
+		overflow: hidden;
 	}
 }
 
