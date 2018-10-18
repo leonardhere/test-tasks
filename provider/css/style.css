@@ -478,8 +478,8 @@ header {
 }
 .service-list__item {
 	padding: 0 15px;
-	width: 70%;
-	margin-left: 18%;
+	width: auto;
+	margin-left: 10%;
 }
 .service-list__item:hover .service-list__icon {
 	background:	#87CEFA;
@@ -793,7 +793,7 @@ header {
 	display: flex;
 }
 .contact-wrap .contact-form {
-	padding-top: 8px;
+	padding-top: -10px;
 }
 .contact-wrap__left {
 	width: 50%;
@@ -998,8 +998,8 @@ header {
 		line-height: 66px;
 	}
 	.logo a {
-		height: 120px;
-		width: 120px;
+		height: 240px;
+		width: 240px;
 		font-size: 34px;
 		line-height: 34px;
 	}
@@ -1138,7 +1138,8 @@ header {
 		padding: 70px 0;
 	}
 	.hr {
-		margin: 80px 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	.about-wrap, .box-skills {
@@ -1150,7 +1151,7 @@ header {
 		margin-left: 33%
 	}
 	.about-wrap-img img {
-		width: 50%;
+		display: none;
 	}
 	.box-skills__item--img {
 		margin: 0 auto 40px;
@@ -1323,8 +1324,8 @@ header {
 		top: 20px;
 	}
 	.logo a {
-		height: 80px;
-		width: 80px;
+		height: 130px;
+		width: 230px;
 		font-size: 20px;
 		line-height: 20px;
 	}
@@ -1496,8 +1497,10 @@ header {
 		width: auto;
 	}
 	#map {
-		height: 320px;
+		height: 200px;
+		width: 200px;
 		overflow: hidden;
+		margin-left: 2%
 	}
 	#map:before, #map:after {
 		display: none;
@@ -1528,9 +1531,18 @@ header {
 		width: auto;
 	}
 	#map {
-		width: 350px;
-		height: 300px;
+		width: 280px;
+		height: 280px;
 		overflow: hidden;
+		margin-left: 1%
+	}
+
+	#fourblock {
+		margin-left: 2%;
+	}
+
+	.contact-wrap {
+		flex-direction: column;
 	}
 }
 
