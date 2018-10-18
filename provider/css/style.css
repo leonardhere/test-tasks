@@ -1015,7 +1015,7 @@ header {
 	}
 
 	.heading {
-		margin-top: -100px;
+		margin-top: -50px;
 		margin-bottom: 110px;
 	}
 	.heading h2 {
@@ -1135,8 +1135,15 @@ header {
 		margin-top: 8px;
 	}
 	.section {
-		padding: 70px 0;
+		padding: 10px 0;
 	}
+
+	#map {
+		margin-left: 9%;
+		margin-top: 12px;
+		margin-bottom: 8px;
+	}
+
 	.hr {
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -1228,9 +1235,7 @@ header {
 	.box-pricing .service-list__icon {
 		margin-left: auto;
 	}
-	#fourblock {
-
-	}
+	
 	.pricing {
 		margin-left: 0;
 	}
@@ -1285,7 +1290,19 @@ header {
 	}
 	.contact-wrap__right {
 		padding-left: 30px;
+		width: 80%;
+		margin-left: 13%;
 	}
+
+	.contact-wrap__left {
+		width: 50%;
+	}
+
+	.contact-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.clients-list__item a {
 		height: 115px;
 	}
@@ -1340,7 +1357,7 @@ header {
 		margin-bottom: 50px;
 	}
 	.heading p {
-		display: none;
+		padding-top: 5px;
 	}
 	.heading h2 {
 
@@ -1520,6 +1537,11 @@ header {
 		font-size: 25px;
 		line-height: 20px;
 	}
+
+	.section {
+		padding: 10px 0;
+	}
+
 	.team-list, .facts-list {
 		display: block;
 	}
