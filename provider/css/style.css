@@ -25,12 +25,15 @@ h1 {
 }
 
 h1 .lg {
-	font-size: 70px;
+	font-size: 40px;
 	font-weight: 700;
 	line-height: 80px;
 	display: block;
 	letter-spacing: -3px;
 }
+
+
+
 h1 .sm {
 	font-size: 40px;
 	font-weight: 300;
@@ -62,7 +65,7 @@ p {
 }
 
 #newfont {
-	font-size: 35px;
+	font-size: 40px;
 }
 
 
@@ -232,8 +235,8 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 320px;
-    height: 250px;
+    width: 400px;
+    height: 150px;
     background-image: url(../img/Stream_logo.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -243,6 +246,7 @@ header {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	margin-top: 125px;
 }
 .menu__item {
 	margin-left: 90px;
@@ -339,7 +343,7 @@ header {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	margin: 15px auto 70px;
+	margin: 50px auto 70px;
 
 }
 .heading h2 {
@@ -1322,6 +1326,10 @@ header {
 		order: 1;
 		text-align: center;
 	}
+
+	#fourblock {
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1334,9 +1342,11 @@ header {
 		line-height: 28px;
 	}
 	h1 .lg {
-		font-size: 32px;
+		font-size: 20px;
 		line-height: 40px;
 	}
+	
+	
 	header {
 		top: 20px;
 	}
@@ -1539,7 +1549,7 @@ header {
 	}
 
 	.section {
-		padding: 10px 0;
+		padding: 5px 0;
 	}
 
 	.team-list, .facts-list {
@@ -1556,7 +1566,8 @@ header {
 		width: 280px;
 		height: 280px;
 		overflow: hidden;
-		margin-left: 1%
+		padding-left: 7px;
+		margin: 0 auto;
 	}
 
 	#fourblock {
