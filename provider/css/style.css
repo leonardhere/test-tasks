@@ -809,7 +809,8 @@ header {
 	width: 50%;
 	-ms-flex-negative: 47%;
 	    flex-shrink: 47%;
-	padding-left: 60px;
+	padding-left: 10px;
+	margin-left: 10px;
 }
 .contact-wrap h6 {
 	margin-bottom: 28px;
@@ -858,12 +859,35 @@ header {
 
 /* map */
 
+#mapnew {
+	position: relative;
+	height: 500px;
+}
+#mapnew:after, #mapnew:before{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-bottom: -100px solid #fff;
+	border-left: 100vw solid transparent;
+}
+
+ #mapnew:before {
+ 	top: 0;
+ 	right: 0;
+ 	-webkit-transform: rotate(180deg);
+ 	        transform: rotate(180deg)
+ }
+
 #map {
 	position: relative;
 	height: 500px;
-	margin-left: 5%;
 }
-#map:after, #map:before{
+#map:after, #mapnew:before{
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -882,6 +906,9 @@ header {
  	-webkit-transform: rotate(180deg);
  	        transform: rotate(180deg)
  }
+
+
+
 
 
 .footer-flex {
@@ -983,11 +1010,27 @@ header {
 		/* min-height: 850px; */
 	}
 
+	#mapnew {
+		height: 250px;
+	}
 	#map {
 		height: 250px;
-		width: 250px;
 	}
 }
+
+@media (min-width: 1024px) {
+	#mapnew {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	#map {
+		display: none;
+	}
+}
+
+
 
 @media (max-width: 1199px) {
 	header {
@@ -1142,10 +1185,15 @@ header {
 		padding: 10px 0;
 	}
 
-	#map {
-		margin-left: 9%;
+	#mapnew {
+		/* margin-left: 9%;
 		margin-top: 12px;
-		margin-bottom: 8px;
+		margin-bottom: 8px; */
+	}
+	#map {
+		/* margin-left: 9%;
+		margin-top: 12px;
+		margin-bottom: 8px; */
 	}
 
 	.hr {
@@ -1295,7 +1343,6 @@ header {
 	.contact-wrap__right {
 		padding-left: 30px;
 		width: 80%;
-		margin-left: 13%;
 	}
 
 	.contact-wrap__left {
@@ -1474,8 +1521,10 @@ header {
 		margin-bottom: 40px;
 	}
 	.contact-wrap__right {
-		padding-left: 0;
+		padding-left: 10px;
 		width: auto;
+		max-width: 420px;
+		margin: 0 auto;
 	}
 	.clients-list {
 		display: block;
@@ -1522,11 +1571,19 @@ header {
 	.blog-list__item {
 		width: auto;
 	}
+	#mapnew {
+		height: 200px;
+		width: 100%;
+		overflow: hidden;
+	}
+	#mapnew:before, #mapnew:after {
+		display: none;
+	}
+
 	#map {
 		height: 200px;
-		width: 200px;
+		width: 100%;
 		overflow: hidden;
-		margin-left: 2%
 	}
 	#map:before, #map:after {
 		display: none;
@@ -1561,11 +1618,17 @@ header {
 	.facts-list__item {
 		width: auto;
 	}
-	#map {
-		width: 280px;
+	#mapnew {
+		width: 100%;
 		height: 280px;
 		overflow: hidden;
-		padding-left: 7px;
+		margin: 0 auto;
+	}
+
+	#map {
+		width: 100%;
+		height: 280px;
+		overflow: hidden;
 		margin: 0 auto;
 	}
 
