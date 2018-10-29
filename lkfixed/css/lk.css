@@ -13,7 +13,7 @@ body {
 
 .flex-column{
 	flex-direction: column;
-	justify-content: space-around;
+	margin-top: 15px;
 }
 
 .br{
@@ -113,7 +113,9 @@ body {
 .account {
 	margin-top: 80px;
 	display: flex;
-  	align-items: center;
+	align-items: center;
+	width: 80%;
+	margin: 80px auto;
 }
 
 .aboutyou {
@@ -122,6 +124,9 @@ body {
 	position: relative;
 	align-self: stretch;
 	justify-content: flex-end;
+}
+.aboutyou.flex-column {
+  align-items: flex-end;
 }
 .aboutyou h2{
 	font-size: initial;
@@ -320,7 +325,7 @@ header{
 
 .btnnew:hover {
 	background-color: #ff0000;
-	color: white;
+	color: black;
 	text-decoration: none;
 	border-color: #ff0000;
 }
@@ -355,7 +360,7 @@ header{
 		width: 25%;
 	}
 	.centralblock{
-		width: 52%;
+		width: 63%;
 	}
 }
 
