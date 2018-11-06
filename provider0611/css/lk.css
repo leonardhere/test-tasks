@@ -34,7 +34,7 @@ body {
 }
 
 .fwtwo {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .form-control {
@@ -320,8 +320,8 @@ body {
 .daily-price:before {
 	background: url(../img/coins.png) no-repeat;
 	content: "";
-	height: 20px;
-	width: 20px;
+	height: 35px;
+	width: 35px;
 	display: block;
 	background-size: 100%;
 }
