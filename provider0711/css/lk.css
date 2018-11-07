@@ -5,6 +5,9 @@ body {
 	line-height: 1;
 	overflow-x: hidden;
 }
+.show-on-mobile.only{
+	display: none;
+}
 
 .flex {
 	display: flex;
@@ -176,7 +179,7 @@ body {
 	margin-top: 80px;
 	display: flex;
 	align-items: center;
-	width: 80%;
+	width: 90%;
 	margin: 80px auto;
 }
 
@@ -267,7 +270,7 @@ body {
 
 .aboutyou, .balance{
 	width: 28%;
-	padding: 0 30px;
+	padding: 0 30px 0 0;
 }
 
 .centralblock{
@@ -372,7 +375,7 @@ header{
 }
 .pricing-footer .btn {
 	height: 38px;
-	padding: 9px 33px 0;
+	padding: 9px 20px 0;
 }
 
 .btn--warning {
@@ -422,7 +425,7 @@ header{
 	display: inline-block;
 	vertical-align: middle;
 	height: 42px;
-	padding: 11px 35px 0;
+	padding: 11px 20px 0;
 	border: 2px solid #ff0000;
 	background-color: white;
 	color: black;
@@ -446,113 +449,17 @@ header{
 	padding-bottom: 20px;
 }
 
-
-@media screen and (min-width: 1023px) {
-	.aboutyou{
+/* desktop only */
+@media screen and (min-width: 1025px) {
+  .aboutyou{
 		width: 25%;
 	}
 	.centralblock{
-		width: 63%;
+		width: 54%;
 	}
 }
 
-
-@media (max-width: 320px) {
-	#unlock {
-		margin-left: -8%;
-	}
-}
-
-@media screen and (max-width: 1025px) {
-	.plan-info .speed-address-price,
-	.plan-info .daily-price,
-	.plan-info .status{
-		width: 100%;
-		display: block;
-		margin: 5px 0;
-	}
-
-	.daily-price:before{
-		display: none;
-	}
-
-	.flex{
-		flex-direction: column;
-	}	
-	.desktop-only{
-		display: none;
-	}
-
-	.flex-column {
-		margin-top: 15px;
-	}
-
-	.balanceposition {
-		padding-top: 1px;
-	}
-	
-	.btncntr {
-		text-align: center;
-	}
-	.aboutyou{
-		width: 28%;
-	}
-	.centralblock{
-		width: 50%;
-	}
-}
-
-@media screen and (max-width: 479px) {
-	.account {
-		flex-direction: column;
-	}
-
-	.aboutyou, .balance, .centralblock{
-		width: 100%;
-		justify-content: start;
-		align-self: unset;
-	}
-
-	.aboutyou:after{
-		display: none;
-	}
-	.flex-column {
-		margin-left: -17%;
-	}
-	
-	.balance{order: 2;}
-	.centralblock{order: 3}
-
-	.balance span{
-		display: inline;
-	}
-
-	.balance p{
-		margin: 10px 0;
-	}
-	
-	.balance .point{
-		margin: 20px 0;
-	}
-}
-
-
-@media (max-width: 1199px) {
-
-	.logo a {
-		height: 100px;
-		width: 240px;
-		font-size: 34px;
-		line-height: 34px;
-	}
-	.menu__item {
-		margin-left: 54px;
-	}
-	.menu__item:after {
-		margin-left: 20px;
-	}
-}
-
+/* wide screens */
 @media (min-width: 1500px) {
 	.centralblock {
 		width: 57%;
@@ -570,6 +477,65 @@ header{
 		width: 45%;
 	}
 }
+
+@media (max-width: 1199px) {
+
+	.logo a {
+		height: 100px;
+		width: 240px;
+		font-size: 34px;
+		line-height: 34px;
+	}
+	.menu__item {
+		margin-left: 54px;
+	}
+	.menu__item:after {
+		margin-left: 20px;
+	}
+}
+
+
+/* tablets */
+@media screen and (max-width: 1025px) {
+	.plan-info .speed-address-price,
+	.plan-info .daily-price,
+	.plan-info .status{
+		width: 100%;
+		display: block;
+		margin: 5px 0;
+	}
+
+	.daily-price:before{
+		display: none;
+	}
+
+	.flex{
+		/* flex-direction: column; */
+		justify-content: space-around;
+	}	
+	.desktop-only{
+		display: none;
+	}
+
+	.flex-column {
+		margin-top: 15px;
+	}
+
+	.balanceposition {
+		padding-top: 1px;
+	}
+	
+	.btncntr {
+		text-align: center;
+	}
+	.aboutyou{
+		width: 32%;
+	}
+	.centralblock{
+		width: 68%;
+	}
+}
+
 
 
 @media (max-width: 991px) {
@@ -645,5 +611,65 @@ header{
 
 	.titlecenter {
 		margin-left: 45%;
+	}
+}
+
+@media screen and (max-width: 479px) {
+  .show-on-mobile, .show-on-mobile.only{
+		display: block;
+	}
+	.hide-on-mobile{
+		display: none;
+	}
+
+	.account {
+		width: 80%;
+		flex-direction: column;
+	}
+
+	.aboutyou, .balance, .centralblock{
+		width: 100%;
+		justify-content: center;
+		align-self: unset;
+	}
+
+	.aboutyou{
+		padding: 0 0 20px;
+	}
+	.aboutyou:after{
+    content: '';
+    position: absolute;
+    width: 15%;
+    background: #87CEFA;
+    height: 4px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 70%;
+    bottom: 17px;
+	}
+
+	.aboutyou.flex-column{
+		align-items: center;
+	}
+	.balance{order: 2;}
+	.centralblock{order: 3}
+
+	.balance span{
+		display: inline;
+	}
+
+	.balance p{
+		margin: 10px 0;
+	}
+	
+	.balance .point{
+		margin: 20px 0;
+	}
+}
+
+@media (max-width: 320px) {
+	#unlock {
+		margin-left: -8%;
 	}
 }
