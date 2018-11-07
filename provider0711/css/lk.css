@@ -7,6 +7,7 @@ body {
 }
 .show-on-mobile.only{
 	display: none;
+	margin-top: 20px;
 }
 
 .flex {
@@ -38,6 +39,14 @@ body {
 
 .fwtwo {
 	font-size: 18px;
+}
+
+.fsbig {
+	font-size: 20px;
+}
+
+.btndown {
+	padding-bottom: 10px;
 }
 
 .form-control {
@@ -226,6 +235,9 @@ body {
 
 .blocks {
 	margin: 10px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .inputbank {
@@ -291,6 +303,10 @@ body {
 
 .fw {
 	font-weight: 600;
+}
+
+.fwnew{
+	font-weight: 700;
 }
 .contract .contract--tile {
 	font-size: small;
@@ -447,6 +463,30 @@ header{
 
 .footer {
 	padding-bottom: 20px;
+}
+
+.bottomposition {
+	margin-bottom: 50px;
+}
+
+
+div.scrollup {
+  position: fixed;
+  color: #fff;
+  background-color: grey;
+  right: 20px;
+  bottom: 0px;
+  padding: 4px 10px;
+  font-size: 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  opacity: 0.7;
+}
+div.scrollup:hover {
+  background-color: #000;
 }
 
 /* desktop only */
@@ -670,6 +710,6 @@ header{
 
 @media (max-width: 320px) {
 	#unlock {
-		margin-left: -8%;
+		margin-left: 2%;
 	}
 }

@@ -62,10 +62,10 @@
 		<div class="centralblock flex">
 			<div class="show-on-mobile only">
 					<div class="blocks">
-						<p>Ваш баланс:</p>
-						<p class="green fw">80 рублей</p>
-						<p>Система оплаты :</p>
-						<p class="green fw">Авансовая</p>
+						<p class="fsbig fwnew">Ваш баланс:</p>
+						<p class="green fsbig fwnew">80 рублей</p>
+						<p class="fsbig fwnew">Система оплаты :</p>
+						<p class="green fsbig fwnew">Авансовая</p>
 					</div>	
 			</div>
 			<div class="blocks">
@@ -78,7 +78,7 @@
 				<p class="textposition">Доступ в сеть</p>
 				<p class="textposition">интернет при</p>
 				<p class="textposition">отрицательном балансе</p>
-				<div class="pricing-footer btncntr"><a href="#" class="btn btn--warning">Подключить</a></div>
+				<div class="pricing-footer btncntr btndown"><a href="#" class="btn btn--warning">Подключить</a></div>
 			</div>
 			<div class="blocks">
 				<p class="textposition">SMS-уведомление</p>
@@ -121,6 +121,9 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="scrollup">
+  	<i class="fa fa-chevron-up"></i>
 	</div>
 	<div class="account operations hide-on-mobile">
 		<div class="aboutyou flex-column">
@@ -222,10 +225,10 @@
 		<div class="centralblock flex">
 			<div class="show-on-mobile only">
 					<div class="blocks">
-						<p>Ваш баланс:</p>
-						<p class="red fw">-14 рублей</p>
-						<p>Система оплаты :</p>
-						<p class="red fw">Кредитная</p>
+						<p class="fsbig fwnew">Ваш баланс:</p>
+						<p class="red fsbig fwnew">-14 рублей</p>
+						<p class="fsbig fwnew">Система оплаты :</p>
+						<p class="red fsbig fwnew">Кредитная</p>
 					</div>	
 			</div>
 			<div class="blocks">
@@ -331,7 +334,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="account operations">
+	<div class="account operations bottomposition">
 		<div class="aboutyou flex-column">
 				<h2>Операции</h2>
 		</div>
@@ -372,7 +375,7 @@
 	<div class="wrapper footer-flex">
 		<p class="copyright">&copy; Стрим 2018. Все права защищены</p>
 	</div>
-</footer>
+	</footer>
 
 
 
@@ -389,5 +392,24 @@
 <script type="text/javascript" src="js/modal.js"></script>
 <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="js/customs_for_animations.js"></script>
+<script>
+$(function() {
+
+  $('.scrollup').click(function() {
+    $("html, body").animate({
+      scrollTop:0
+    },1000);
+  })
+})
+
+$(window).scroll(function() {
+  if ($(this).scrollTop()>200) {
+    $('.scrollup').fadeIn();
+  }
+  else {
+    $('.scrollup').fadeOut();
+  }
+});
+</script>
 </body>
 </html>
