@@ -667,13 +667,13 @@ div.scrollup:hover {
 
 @media screen and (max-width: 769px) and (min-width: 767px) { 
   .footer {
-  	margin-left: 26%;
+  	margin-left: -42%;
   }
 }
 
 @media screen and (max-width: 1025px) and (min-width: 1023px) { 
   .footer {
-  	margin-left: 46%;
+  	margin-left: 6%;
   }
 }
 
