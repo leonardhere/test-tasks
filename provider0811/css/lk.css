@@ -17,7 +17,6 @@ body {
 
 .flex-column{
 	flex-direction: column;
-	margin-top: 15px;
 }
 
 .br{
@@ -572,9 +571,6 @@ div.scrollup:hover {
 		display: none;
 	}
 
-	.flex-column {
-		margin-top: 15px;
-	}
 
 	.balanceposition {
 		padding-top: 1px;
