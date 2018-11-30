@@ -7875,12 +7875,13 @@ textarea.form-control {
     visibility: visible;
     opacity: 1; }
 
-#map {
+#map iframe {
   height: 400px;
   width: 100%; }
-  @media (max-width: 991.98px) {
-    #map {
-      height: 300px; } }
+  @media (max-width: 450px) {
+    #map iframe {
+      height: 300px;
+       } }
 
 .container-fluid {
   margin-left: 0 !important;
