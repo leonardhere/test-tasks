@@ -359,29 +359,7 @@ File Description: Place here your custom CSS styles
   z-index: 1;
 }
 
-.btn {
-	text-transform: uppercase;
-  font-weight: bold;
-  padding: 15px 26px;
-  padding: 1.5rem 2.6rem;
-  color: #fff;
-  border-radius: 0;
-  border: none;
-  font-size: 22px;
-  font-size: 2.2rem;
-}
-* {
-outline: none !important;
-}
-.btn:hover,
-.btn:focus,
-.btn:active {
-	color: #fff;
-}
-.btn-transparent {
-	background-color: transparent;
-	border: 3px solid #fff;
-}
+
 .ct-slick .slick-track,
 .ct-slick .slick-list,
 .ct-slick .item,
