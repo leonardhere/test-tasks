@@ -25,7 +25,9 @@ $(document).ready(function() {
    });
  $(document).ready(function(){
    $('.ct-slick-homepage').slick({
-     autoplay: true,
-      autoplaySpeed: 3000,
+     autoplay: false,
+       autoplaySpeed: 3000,
+      dots: true,
+      arrows: false
    });
  });

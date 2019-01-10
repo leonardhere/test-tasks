@@ -696,13 +696,13 @@ textarea {
 	}
 }
 
-@media (min-width:374px) and (max-width: 376px ) {
+@media (min-width:350px) and (max-width: 390px ) {
 	#buttonbanner {
 		margin-left: 29%;
 	}
 }
 
-@media (min-width:413px) and (max-width: 415px ) {
+@media (min-width:400px) and (max-width: 430px ) {
 	#buttonbanner {
 		margin-left: 30%;
 	}
