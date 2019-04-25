@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Fontfabric_Muller;
+  src: url("/fonts/Fontfabric_MullerRegular.otf") format("opentype"); }
+@font-face {
+  font-family: Fontfabric_Muller;
+  font-weight: bold;
+  src: url("/fonts/Fontfabric_MullerBold.otf") format("opentype"); }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Fontfabric_Muller; }
+
+.submit {
+  text-align: center;
+  border: none;
+  padding: 20px 40px;
+  background-color: #f39c12;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-weight: 900; }
+  .submit a {
+    color: white; }
+  .submit:hover {
+    background-color: white;
+    color: #f39c12; }
+  .submit:hover a {
+    color: #f39c12; }
+  .submit:disabled {
+    background-color: #c5ab82; }
+
+.full_inform {
+  outline: 2px solid #f39c12;
+  display: inline-block;
+  padding: 2%;
+  color: black;
+  font-weight: 900;
+  cursor: pointer; }
+
+#schedule {
+  margin: 0 auto; }
+  #schedule .content {
+    font-size: 0; }
+    #schedule .content > * {
+      font-size: 15px; }
+  #schedule .room_lable {
+    font-size: 30px;
+    color: #FFA903; }
+  #schedule .schedule_day {
+    display: inline-block;
+    width: 90%;
+    padding: 5vw 5%;
+    font-size: 0; }
+    #schedule .schedule_day > * {
+      font-size: 15px; }
+    #schedule .schedule_day:nth-child(2) {
+      background-color: #dfdfdf; }
+    #schedule .schedule_day .tab-day {
+      font-size: 35px; }
+      #schedule .schedule_day .tab-day span:not(.day) {
+        color: gray; }
+      #schedule .schedule_day .tab-day .day {
+        font-weight: 900; }
+  #schedule .schedule_lection {
+    border-bottom: 1px dotted gray; }
+  #schedule .schedule_room {
+    vertical-align: top;
+    display: inline-block;
+    width: 18%;
+    padding: 0 1%;
+    margin: 20px 0; }
+    #schedule .schedule_room p {
+      display: inline-block;
+      width: 100%; }
+  #schedule .time {
+    margin-top: 10px; }
+  #schedule .title {
+    color: gray; }
+
+@media all and (max-width: 680px) {
+  #schedule .schedule_room {
+    width: 98%; } }
+
+/*# sourceMappingURL=schedule.css.map */

@@ -1,0 +1,136 @@
+#set_clients_data {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%; }
+  #set_clients_data .ddm_btn {
+    margin: -1%;
+    padding: 1%;
+    cursor: pointer; }
+    #set_clients_data .ddm_btn span {
+      width: 95%;
+      display: inline-block;
+      transition: all 1s ease; }
+    #set_clients_data .ddm_btn i {
+      transition: all 1s ease; }
+  #set_clients_data .ddm_btn_rotate {
+    transform: rotate(540deg); }
+  #set_clients_data .formBlock {
+    display: inline-block;
+    padding: 10px 1%;
+    outline: 1px solid black;
+    margin: 10px 1%;
+    overflow: hidden;
+    height: 15px;
+    transition: all 1s ease;
+    width: 96%; }
+    #set_clients_data .formBlock.volunteer {
+      height: auto; }
+      #set_clients_data .formBlock.volunteer .container, #set_clients_data .formBlock.volunteer label, #set_clients_data .formBlock.volunteer input {
+        width: 98%; }
+    #set_clients_data .formBlock.single_customer, #set_clients_data .formBlock.volunteer {
+      outline: none;
+      height: auto; }
+    #set_clients_data .formBlock .container {
+      display: inline-block;
+      font-size: 0; }
+      #set_clients_data .formBlock .container > *, #set_clients_data .formBlock .container .form_btn {
+        font-size: 15px; }
+      #set_clients_data .formBlock .container .form_btn {
+        width: 46%;
+        margin: 1vw 2%; }
+      #set_clients_data .formBlock .container .promo {
+        display: none; }
+  #set_clients_data .title {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0; }
+  #set_clients_data .container > label {
+    margin: 10px 2%;
+    width: 29%;
+    display: inline-block;
+    vertical-align: bottom; }
+    #set_clients_data .container > label > * {
+      display: block; }
+    #set_clients_data .container > label span {
+      font-weight: 900;
+      margin-bottom: 20px; }
+    #set_clients_data .container > label input, #set_clients_data .container > label textarea {
+      border: none;
+      width: 100%;
+      outline: 2px solid gray;
+      height: 30px;
+      font-size: 20px;
+      text-align: center; }
+    #set_clients_data .container > label .inputError {
+      outline: 1px solid red; }
+  #set_clients_data .form_btn {
+    width: 29%;
+    display: inline-block;
+    margin: 10px 2%; }
+    #set_clients_data .form_btn input {
+      display: none; }
+      #set_clients_data .form_btn input:checked + label {
+        outline: 2px solid #efb944; }
+      #set_clients_data .form_btn input:disabled + label {
+        opacity: 0.5; }
+    #set_clients_data .form_btn label {
+      font-size: 15px;
+      padding: 7px 0;
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      outline: 2px solid gray;
+      cursor: pointer;
+      transition: all 0.5s ease; }
+  #set_clients_data textarea {
+    vertical-align: bottom; }
+  #set_clients_data .volunteer_only {
+    display: none; }
+  #set_clients_data #errors {
+    color: red; }
+
+#room {
+  background-color: #F9F7FC;
+  width: 26%;
+  display: inline-block;
+  padding: 1vw 1%;
+  margin: 1vw 1%; }
+  #room hr {
+    margin: 2vw; }
+  #room .bed_icon {
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px;
+    margin: 15px 5px;
+    border-radius: 50%;
+    background-color: #FFA903; }
+  #room .room_name {
+    display: block;
+    font-weight: 900; }
+  #room .guests_cnt {
+    padding: 10px 0;
+    font-size: 0; }
+    #room .guests_cnt span {
+      display: inline-block;
+      font-size: 15px;
+      width: 50%; }
+  #room .price {
+    font-weight: 900;
+    padding: 10px 0;
+    font-size: 20px; }
+
+@media all and (max-width: 768px) {
+  #set_clients_data .formBlock .container > *, #set_clients_data .formBlock .container .form_btn {
+    width: 46%; } }
+@media all and (max-width: 620px) {
+  #room {
+    width: 96%; }
+
+  #set_clients_data {
+    width: 100%; } }
+@media all and (max-width: 400px) {
+  #set_clients_data .formBlock .container > *, #set_clients_data .formBlock .container .form_btn {
+    width: 96%; } }
+
+/*# sourceMappingURL=registrationForm.css.map */

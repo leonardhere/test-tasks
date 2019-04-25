@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Fontfabric_Muller;
+  src: url("/fonts/Fontfabric_MullerRegular.otf") format("opentype"); }
+@font-face {
+  font-family: Fontfabric_Muller;
+  font-weight: bold;
+  src: url("/fonts/Fontfabric_MullerBold.otf") format("opentype"); }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Fontfabric_Muller; }
+
+.submit {
+  text-align: center;
+  border: none;
+  padding: 20px 40px;
+  background-color: #f39c12;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-weight: 900; }
+  .submit a {
+    color: white; }
+  .submit:hover {
+    background-color: white;
+    color: #f39c12; }
+  .submit:hover a {
+    color: #f39c12; }
+  .submit:disabled {
+    background-color: #c5ab82; }
+
+.full_inform {
+  outline: 2px solid #f39c12;
+  display: inline-block;
+  padding: 2%;
+  color: black;
+  font-weight: 900;
+  cursor: pointer; }
+
+h1 {
+  font-size: 36px;
+  margin: 0 5%;
+  text-align: left; }
+
+#recalls {
+  margin: 5vw 3%;
+  text-align: center;
+  display: inline-block;
+  font-size: 0; }
+  #recalls li {
+    font-size: 15px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 2%;
+    display: inline-block;
+    width: 21%;
+    text-align: left; }
+  #recalls .img_cont {
+    display: inline-block;
+    width: 100%; }
+  #recalls img {
+    display: inline-block;
+    width: 100%; }
+  #recalls span {
+    display: block;
+    text-align: center; }
+
+@media all and (max-width: 810px) {
+  #recalls li {
+    width: 41%; }
+  #recalls .img_cont {
+    height: 40vw; } }
+@media all and (max-width: 450px) {
+  #recalls li {
+    width: 96%;
+    padding: 0; }
+    #recalls li img {
+      height: 80vw; } }
+
+/*# sourceMappingURL=recalls.css.map */

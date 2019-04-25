@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACN,OAAO,EAAE,YAAY;EACrB,MAAM,EAAE,MAAM;EAEd,UAAE;IACD,OAAO,EAAE,YAAY;IACrB,WAAW,EAAE,IAAI;IACjB,aAAa,EAAE,IAAI",
+"sources": ["../sass/user_agreement.sass"],
+"names": [],
+"file": "user_agreement.css"
+}
