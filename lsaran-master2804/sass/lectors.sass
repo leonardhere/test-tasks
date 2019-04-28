@@ -1,0 +1,83 @@
+@import "common"
+#lectors
+    padding: 50px 5%
+    background-color: #F9F7FC
+    h1
+        font-size: 36px
+        margin: 20px 0
+    .subH
+        color: gray
+
+    h2
+        margin-bottom: 30px
+    ul
+        margin: 0 -10px
+        text-align: left
+        font-size: 0
+        .content
+            width: 23%
+            flex-direction: row
+            display: inline-block 
+            padding: 1vw 1%
+            font-size: 15px
+            &>a
+                display: inline-block
+                text-decoration: none
+                vertical-align: top
+                color: black
+                width: 100%
+
+        .lector_img
+            position: relative
+            display: inline-block
+            width: 100%
+            img
+                width: 100%
+                transition: all 0.2s ease            
+                            
+
+        .name
+            position: absolute
+            left: 0
+            bottom: 0
+            text-align: left
+            display: inline-block
+            transition: all 0.5s ease            
+            span
+                display: block
+            .name_
+                font-size: 20px
+                font-weight: 900
+                padding: 10px
+                display: inline-block
+                background-color: white
+
+        .descr, .title,
+            display: inline-block
+            margin: 10px
+        .descr
+            font-weight: 600
+
+        .title
+            color: gray
+
+    .content:hover
+
+        .name
+            color: #FFA903
+        .lector_img img
+            box-shadow: 5px 5px 5px 4px grey
+
+@media all and (max-width: 768px)
+
+    #lectors 
+        ul .content
+            width: 48%
+            padding: 0 1%
+
+@media all and (max-width: 450px)
+
+    #lectors 
+        ul .content
+            width: 100%
+            padding: 0          

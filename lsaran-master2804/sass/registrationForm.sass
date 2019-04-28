@@ -1,0 +1,157 @@
+#set_clients_data
+	display: inline-block
+	vertical-align: top
+	width: 65%
+	.ddm_btn
+		margin: -1%
+		padding: 1%
+		cursor: pointer
+		span
+			width: 95%
+			display: inline-block
+			transition: all 1s ease			
+		i
+			transition: all 1s ease
+	
+	.ddm_btn_rotate
+		transform: rotate(540deg)
+
+	.formBlock
+
+		display: inline-block
+		padding: 10px 1%
+		outline: 1px solid black
+		margin: 10px 1%
+		overflow: hidden
+		height: 15px
+		transition: all 1s ease
+		width: 96%
+		&.volunteer
+			height: auto
+			.container, label, input
+				width: 98%
+
+		&.single_customer, &.volunteer
+			outline: none
+			height: auto
+
+
+
+		.container
+			display: inline-block
+			font-size: 0
+			&>*, & .form_btn
+				font-size: 15px
+			.form_btn
+				width: 46%
+				margin: 1vw 2%
+
+			.promo
+				display: none
+	.title
+		text-align: center
+		font-size: 20px
+		margin: 10px 0  
+
+						
+	.container > label		
+		margin: 10px 2%
+		width: 29%
+		display: inline-block
+		vertical-align: bottom
+		&>*
+			display: block
+		span
+			font-weight: 900
+			margin-bottom: 20px
+		input, textarea
+			border: none
+			width: 100%
+			outline: 2px solid gray
+			height: 30px
+			font-size: 20px
+			text-align: center
+		
+		.inputError
+			outline: 1px solid red
+
+
+	.form_btn
+		width: 29%
+		display: inline-block
+		margin: 10px 2%
+		input
+			display: none
+			&:checked + label
+				outline: 2px solid #efb944
+			&:disabled + label
+				opacity: 0.5
+	
+		label
+			font-size: 15px
+			padding: 7px 0
+			width: 100%
+			text-align: center
+			display: inline-block
+			outline: 2px solid gray
+			cursor: pointer
+			transition: all .5s ease		
+
+	textarea
+		vertical-align: bottom
+	.volunteer_only
+		display: none
+	#errors
+		color: red
+
+#room
+	background-color: #F9F7FC
+	width: 26%
+	display: inline-block
+	padding: 1vw 1%
+	margin: 1vw 1%
+
+	hr
+		margin: 2vw
+	.bed_icon
+		color: white
+		display: inline-block
+		font-size: 30px
+		padding: 15px
+		margin: 15px 5px
+		border-radius: 50%
+		background-color: #FFA903
+
+	.room_name
+		display: block
+		font-weight: 900
+
+
+	.guests_cnt
+		padding: 10px 0
+		font-size: 0
+		span
+			display: inline-block
+			font-size: 15px
+			width: 50%			
+	.price
+		font-weight: 900
+		padding: 10px 0
+		font-size: 20px
+
+@media all and (max-width: 768px)
+	#set_clients_data .formBlock .container 
+		&> *, .form_btn
+			width: 46%
+
+
+@media all and (max-width: 620px)
+	#room
+		width: 96%
+	#set_clients_data
+		width: 100%
+
+@media all and (max-width: 400px)
+	#set_clients_data .formBlock .container 
+		&> *, .form_btn
+			width: 96%

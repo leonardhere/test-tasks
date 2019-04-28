@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACN,MAAM,EAAE,MAAM;EAEd,aAAK;IACJ,UAAU,EAAE,MAAM;IAClB,SAAS,EAAE,KAAK;EAEjB,UAAE;IACD,gBAAgB,EAAE,OAAO;EAE1B,UAAE;IACD,gBAAgB,EAAE,OAAO;EAE1B,cAAM;IACL,KAAK,EAAE,GAAG",
+"sources": ["../sass/price.sass"],
+"names": [],
+"file": "price.css"
+}

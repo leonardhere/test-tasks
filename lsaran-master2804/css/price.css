@@ -1,0 +1,13 @@
+section {
+  margin: 5vw 5%; }
+  section table {
+    text-align: center;
+    font-size: 1.2vw; }
+  section th {
+    background-color: #d7c1f2; }
+  section h2 {
+    background-color: #d6d6d7; }
+  section .price {
+    width: 25%; }
+
+/*# sourceMappingURL=price.css.map */

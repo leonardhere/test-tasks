@@ -1,0 +1,91 @@
+@import "common"
+section
+    padding: 50px 5%
+    h1
+        font-size: 36px
+        margin: 20px 1%
+    .subH
+        color: gray
+
+    .voluntears
+        font-size: 0
+        margin: 30px 0
+        li
+            display: inline-block
+            font-size: 15px
+            width: 23%
+            padding: 20px 0
+            text-align: center
+
+        span
+            display: block
+            font-weight: 900
+            font-size: 30px
+        .surname
+            color: #FFA903
+
+
+    ul
+        font-size: 0
+        .content
+            width: 23%
+            flex-direction: row
+            display: inline-block 
+            padding: 0 1%
+            font-size: 15px
+            margin-bottom: 20px
+
+        .team_participant_img
+            position: relative
+            display: inline-block
+            width: 100%
+            img
+                width: 100%
+
+        .name
+            position: absolute
+            left: 0
+            bottom: 0
+            display: inline-block
+            span
+                display: block
+            .name_
+                font-size: 20px
+                font-weight: 900
+                padding: 10px
+                display: inline-block
+                background-color: white
+
+        .descr
+            display: inline-block
+            margin: 10px
+
+@media all and (max-width: 1024px)
+    section 
+        ul .content
+            width: 31%
+            padding: 0 1%
+
+
+
+@media all and (max-width: 768px)
+
+    section 
+        ul .content
+            width: 48%
+            padding: 0 1%
+
+        .voluntears li
+            width: 100%
+            margin: 10px 0
+            display: block
+            span
+                display: inline-block
+
+@media all and (max-width: 450px)
+
+    section
+        ul .content
+            width: 100%
+            padding: 0
+
