@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Fontfabric_Muller;
+  src: url("/fonts/Fontfabric_MullerRegular.otf") format("opentype"); }
+@font-face {
+  font-family: Fontfabric_Muller;
+  font-weight: bold;
+  src: url("/fonts/Fontfabric_MullerBold.otf") format("opentype"); }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Fontfabric_Muller; }
+
+.submit {
+  text-align: center;
+  border: none;
+  padding: 20px 40px;
+  background-color: #f39c12;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-weight: 900; }
+  .submit a {
+    color: white; }
+  .submit:hover {
+    background-color: white;
+    color: #f39c12; }
+  .submit:hover a {
+    color: #f39c12; }
+  .submit:disabled {
+    background-color: #c5ab82; }
+
+.full_inform {
+  outline: 2px solid #f39c12;
+  display: inline-block;
+  padding: 2%;
+  color: black;
+  font-weight: 900;
+  cursor: pointer; }
+
+#evening_programs {
+  padding: 50px 5%;
+  background-color: #F9F7FC; }
+  #evening_programs h1 {
+    font-size: 36px; }
+  #evening_programs .descr_h {
+    font-weight: 500;
+    font-size: 20px; }
+  #evening_programs .descr {
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 15px; }
+    #evening_programs .descr li {
+      margin-right: 40px; }
+  #evening_programs h2 {
+    font-size: 25px;
+    margin: 20px 0; }
+  #evening_programs .subH {
+    color: gray; }
+  #evening_programs ul {
+    margin: 0 -10px;
+    text-align: left;
+    font-size: 0; }
+    #evening_programs ul .content {
+      width: 23%;
+      flex-direction: row;
+      display: inline-block;
+      padding: 1vw 1%;
+      font-size: 15px; }
+      #evening_programs ul .content > a {
+        display: inline-block;
+        text-decoration: none;
+        vertical-align: top;
+        color: black;
+        width: 100%; }
+    #evening_programs ul .party_img {
+      position: relative;
+      display: inline-block;
+      width: 100%; }
+      #evening_programs ul .party_img img {
+        width: 100%;
+        transition: all 0.2s ease; }
+    #evening_programs ul .name {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      text-align: left;
+      display: inline-block;
+      transition: all 0.5s ease; }
+      #evening_programs ul .name span {
+        display: block; }
+      #evening_programs ul .name .name_ {
+        font-size: 20px;
+        font-weight: 900;
+        padding: 10px;
+        display: inline-block;
+        background-color: white; }
+    #evening_programs ul .descr, #evening_programs ul .title {
+      display: inline-block;
+      margin: 10px; }
+    #evening_programs ul .descr {
+      font-weight: 600; }
+    #evening_programs ul .title {
+      color: gray; }
+  #evening_programs .content:hover .name {
+    color: #FFA903; }
+  #evening_programs .content:hover .party_img img {
+    box-shadow: 5px 5px 5px 4px grey; }
+
+@media all and (max-width: 768px) {
+  #evening_programs ul .content {
+    width: 48%;
+    padding: 0 1%; } }
+@media all and (max-width: 450px) {
+  #evening_programs ul .content {
+    width: 100%;
+    padding: 0; } }
+
+/*# sourceMappingURL=evening_program.css.map */

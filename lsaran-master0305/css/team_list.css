@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Fontfabric_Muller;
+  src: url("/fonts/Fontfabric_MullerRegular.otf") format("opentype"); }
+@font-face {
+  font-family: Fontfabric_Muller;
+  font-weight: bold;
+  src: url("/fonts/Fontfabric_MullerBold.otf") format("opentype"); }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Fontfabric_Muller; }
+
+.submit {
+  text-align: center;
+  border: none;
+  padding: 20px 40px;
+  background-color: #f39c12;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-weight: 900; }
+  .submit a {
+    color: white; }
+  .submit:hover {
+    background-color: white;
+    color: #f39c12; }
+  .submit:hover a {
+    color: #f39c12; }
+  .submit:disabled {
+    background-color: #c5ab82; }
+
+.full_inform {
+  outline: 2px solid #f39c12;
+  display: inline-block;
+  padding: 2%;
+  color: black;
+  font-weight: 900;
+  cursor: pointer; }
+
+#team_list {
+  position: relative;
+  background-color: #29273C;
+  text-align: center;
+  color: white;
+  min-height: 80vh;
+  overflow: hidden; }
+  #team_list li {
+    line-height: 270%;
+    display: inline-block;
+    width: 100%; }
+  #team_list ul {
+    margin-bottom: 20px;
+    display: inline-block; }
+  #team_list #scroll_container {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  #team_list .shadow {
+    left: 0;
+    top: 0;
+    position: absolute;
+    min-height: 80vh;
+    width: 100%;
+    box-shadow: inset 0 0 100px 70px #29273C;
+    z-index: 10; }
+  #team_list .full_inform {
+    position: absolute;
+    top: 5vw;
+    right: 5%;
+    z-index: 11;
+    color: white;
+    padding: 10px; }
+  #team_list h1 {
+    position: absolute;
+    top: 5vw;
+    left: 5%;
+    font-size: 36px;
+    z-index: 11;
+    color: white; }
+
+@media all and (max-width: 500px) {
+  #team_list .shadow {
+    text-align: left;
+    padding: 5vw; }
+    #team_list .shadow > * {
+      display: inline-block;
+      position: static; } }
+
+/*# sourceMappingURL=team_list.css.map */

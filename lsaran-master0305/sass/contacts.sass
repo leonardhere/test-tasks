@@ -1,0 +1,84 @@
+@import "common"
+section
+	height: 80vh
+	font-size: 0
+	color: white
+	& > *
+		vertical-align: top
+		display: inline-block
+		height: inherit
+		font-size: 15px
+	h1
+		margin: 5vw
+		font-size: 36px
+	.map_inform
+		width: 70%
+		background-image: url(../image/mapBG.png)
+		background-size: cover
+		.transfer
+			margin-left: 5vw
+			p
+				margin: 5px 0
+				display: inline-block
+				font-size: 18px
+
+	.contacts_inform
+		width: 20%
+		padding: 0 7% 0 3%
+		background-color: #202A42
+		h2
+			margin-top: 50px 
+			font-size: 25px
+
+		p 
+			margin: 20px 0
+			font-size: 22px
+		.descr
+			padding-bottom: 50px
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+		.submit
+			text-align: center	
+			width: 10vw
+	.social
+		margin-top: 10px 
+		a
+			display: inline-block
+			width: 45px
+			height: 45px
+			transition: all 0.5s ease
+			img
+				display: inline-block
+				width: 45px
+				height: 45px				
+			&:hover
+				box-shadow: 0 0 1px 4px white
+
+@media all and (max-width: 1034px)
+	section
+		.contacts_inform
+			width: 40%	
+			padding: 0 5%
+		.map_inform		
+			width: 50%	
+
+
+@media all and (max-width: 680px)
+	section
+		height: auto
+		h1
+			text-align: center
+		.map_inform
+			width: 100%
+			.transfer
+				margin: 0
+
+		.contacts_inform
+			width: 90%
+			padding: 0 5%
+			.submit
+				width: 90%
+				margin: 20px 0
+				padding: 20px 5%
+
+
+@import "google_map"

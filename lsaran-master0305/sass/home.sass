@@ -1,0 +1,38 @@
+
+.slider_container
+	overflow: hidden
+
+.head
+	font-size: 0
+	margin: 20px 0
+	div
+		display: inline-block
+		width: 70%
+		font-size: 16px
+		*
+			vertical-align: middle
+
+		&:nth-child(2)
+			text-align: right
+			width: 30%
+	h2
+		display: inline-block
+		font-size: 36px
+
+
+@import "main"
+@import "common"
+@import "inform"
+@import "time_counter"
+@import "slider_lectors"
+@import "slider_recall"
+@import "partners"
+@import "google_map"
+@import "position"
+
+@media all and (max-width: 680px)
+	.head
+		div:nth-child(n)
+			width: 100%
+			text-align: left
+			margin-top: 10px	
