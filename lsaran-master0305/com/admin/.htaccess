@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Admin Panel"
-AuthUserFile /var/www/lsara410/data/www/lsaran.moscow/com/admin/.htpasswd
-Require valid-user
