@@ -249,8 +249,14 @@
                 .parametrs, .differents{
                     display: flex;
                     p{
-                        margin-top: -2px;
+                        margin-top: -4px;
                         margin-left: 11px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #000000;
+                        @extend %gilroy-regular;
                     }
                 }
                 .differents{
@@ -259,9 +265,15 @@
             }
             .compare__left-list{
                 padding: 0;
-                margin-top: 145px;
+                margin-top: 129px;
                 .compare__left-list__item{
                     margin-bottom: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #000000;
+                    @extend %gilroy-regular;
                     &:last-child{
                         padding-top: 24px;
                     }

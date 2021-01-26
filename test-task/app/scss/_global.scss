@@ -18,3 +18,21 @@ ul, li{
 a{
     text-decoration: none;
 }
+
+.hidden {
+    display: none !important;
+}
+
+.addposition{
+    margin-top: 180px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 35px;
+    margin-left: 35px;
+    span{
+        color: #BF1E28;;
+    }
+}

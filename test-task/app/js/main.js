@@ -1,7 +1,7 @@
 $(function(){
 
 $('.compare__slider').slick({
-    // infinite: true,
+    infinite: false,
     slidesToScroll: 1,
     slidesToShow: 3,
     arrows: true,
@@ -30,10 +30,6 @@ $('.overlay').click(function() {
 $('#clearslider').on('click', function() {
   $('.slick-list').html('');
 })
-
-
-
-
   
 });
 
@@ -57,4 +53,21 @@ function removeElem(delElem, attribute, attributeName) {
   }
   
   
-  document.addEventListener("click", removeElem("compare__slider-item", "data-del", "delete"));
+document.addEventListener("click", removeElem("slick-slide", "data-del", "delete"));
+
+
+const $slider = document.querySelector('.compare__slider');
+const $comparatorItem = document.querySelector('.compare__slider-item.last')
+const callback = function(mutationsList, observer) {
+  mutationsList.forEach(mutation => {
+    if (mutation.type === 'childList') {
+      console.log("here");
+      ($slider.querySelectorAll(".compare__slider-item").length <= 2)
+      ? $comparatorItem.querySelector("div").classList.remove("hidden")
+      : $comparatorItem.querySelector("div").classList.add("hidden")
+    }
+  })
+};
+
+const sliderObserver = new MutationObserver(callback);
+sliderObserver.observe($slider, { childList: true, subtree: true });
