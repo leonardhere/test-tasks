@@ -1,19 +1,15 @@
 <template>
   <div id="app">
-    <h1>Таблица VUE</h1>
-    <table>
-      <tr><th>Пользователь</th><th><a href="#">Возраст</a></th><th>Дата рождения</th></tr>
-      <tr v-for="user in users" :key="user.id"><td>{{user.name}}</td><td>{{user.age}}</td><td>{{user.datebirth}}</td></tr>
-    </table>
+    <MainTable
+      :users="users"
+    />
   </div>
 </template>
 
 <script>
-
+import MainTable from '@/components/MainTable.vue'
 export default {
   name: 'App',
-  components: {
-  },
   data() {
     return {
       users: [ 
@@ -25,9 +21,10 @@ export default {
          ]
       }
   },
-    methods: {
+    components: {
+    MainTable,
+  },
 
-  }
 }
 </script>
 
