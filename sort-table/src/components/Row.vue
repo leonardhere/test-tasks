@@ -1,5 +1,5 @@
 <template>
-    <tr><td>{{user.name}}</td><td>{{user.age}}</td><td>{{user.datebirth}}</td></tr>
+    <tr><td>{{user.person.name}}</td><td>{{user.age}}</td><td>{{user.person.birthday}}</td></tr>
 </template>
 
 <script>

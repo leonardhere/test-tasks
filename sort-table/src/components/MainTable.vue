@@ -6,7 +6,7 @@
       <tr><th>Пользователь <button v-on:click="sort('name')">Сортировать</button></th><th>Возраст <button v-on:click="sort('age')">Сортировать</button></th><th>Дата рождения</th></tr>
       <Row
         :user="user"
-        v-for="user of sortedArr"
+        v-for="user of users"
         :key="user.id"
       />
     </table>
@@ -78,7 +78,7 @@ export default{
       this.directionName = 'asc';
     },
   },
-    computed: {
+  computed: {
     searchUsers() {
       if (this.search) {
         return this.users.filter(item => {

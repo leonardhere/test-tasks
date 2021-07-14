@@ -1,0 +1,77 @@
+[
+  {
+    "username": "rikitiki",
+    "phone": "79289876532",
+    "email": "rikitiki@gmail.com",
+    "person": {
+      "name": "Richard",
+      "surname": "Black",
+      "birthday": "12.10.84"
+    },
+    "do_not_show_it_in_UI": "be-e-e-e"
+  },
+  {
+    "username": "arblack",
+    "phone": "79299876832",
+    "email": "arblk@gmail.com",
+    "person": {
+      "name": "Arnold",
+      "surname": "Black",
+      "birthday": "07.10.83"
+    },
+    "do_not_show_it_in_UI": "be-e-e-e"
+  },
+  {
+    "username": "brutal-go",
+    "phone": "79299876832",
+    "email": "brutal-go@gmail.com",
+    "person": {
+      "name": "Goga",
+      "surname": "Rusic",
+      "birthday": "02.10.84"
+    },
+    "do_not_show_it_in_UI": "be-e-e-e"
+  },
+  {
+    "username": "rikitiki",
+    "phone": "79289876532",
+    "email": "rikitiki@gmail.com",
+    "person": {
+      "name": "Richard",
+      "surname": "Black",
+      "birthday": "12.10.84"
+    },
+    "do_not_show_it_in_UI": "be-e-e-e"
+  },
+  {
+    "username": "vanja",
+    "phone": "79299546832",
+    "email": "vanja-bogatovich@gmail.com",
+    "person": {
+      "name": "vanja",
+      "surname": "bogatovich",
+      "birthday": "12.10.84"
+    },
+    "do_not_show_it_in_UI": "be-e-e-e"
+  },
+  {
+    "username": "jjruf",
+    "email": "jjruf@gmail.com",
+    "person": {
+      "name": "John",
+      "surname": "Johansen",
+      "birthday": "12.10.89"
+    },
+    "do_not_show_it_in_UI": "be-e-e-e"
+  },
+  {
+    "username": "hekapu",
+    "phone": "79289876532",
+    "person": {
+      "name": "Аня",
+      "surname": "Потапова",
+      "birthday": "08.09.93"
+    },
+    "do_not_show_it_in_UI": "be-e-e-e"
+  }
+]
