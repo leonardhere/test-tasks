@@ -3,10 +3,10 @@
     <h1>Таблица VUE</h1>
     <input type="text" v-model="search" placeholder="Поиск по сотрудникам">
     <table>
-      <tr><th>Пользователь <button v-on:click="sort('name')">Сортировать</button></th><th>Возраст <button v-on:click="sort('age')">Сортировать</button></th><th>Дата рождения</th></tr>
+      <tr><th>Пользователь <button v-on:click="sort('name')">Сортировать</button></th><th>Возраст <button v-on:click="sort('age')">Сортировать</button></th><th>Дата рождения</th><th>e-mail <button v-on:click="sort('email')">Сортировать</button></th><th>Номер телефона <button v-on:click="sort('phone')">Сортировать</button></th></tr>
       <Row
         :user="user"
-        v-for="user of users"
+        v-for="user of tableData"
         :key="user.id"
       />
     </table>
@@ -24,9 +24,9 @@ export default{
   },
     data() {
     return {
-      sortedArr: JSON.parse(JSON.stringify(this.users)),
+      // sortedArr: JSON.parse(JSON.stringify(this.users)),
       directionName: 'asc',
-      search: ''
+      search: '',
     };
   },
     components: {
@@ -42,51 +42,46 @@ export default{
         this.origin();
       }
     },
-    sortAsc(key) {
-      this.sortedArr.sort((a, b) => {
-        if (a[key] < b[key]) {
-          return -1;
-        }
-
-        if (a[key] > b[key]) {
-          return 1;
-        }
-
-        return 0;
-      });
-
+    sortAsc() {
       this.directionName = 'desc';
     },
-    sortDesc(key) {
-      this.sortedArr.sort((a, b) => {
-        if (a[key] > b[key]) {
-          return -1;
-        }
-
-        if (a[key] < b[key]) {
-          return 1;
-        }
-
-        return 0;
-      });
-
+    sortDesc() {
       this.directionName = 'origin';
     },
     origin() {
-      this.sortedArr = JSON.parse(JSON.stringify(this.users));
 
       this.directionName = 'asc';
     },
   },
   computed: {
-    searchUsers() {
-      if (this.search) {
-        return this.users.filter(item => {
-          return item.name.includes(this.search)
-        })
-      }
-      return this.users
-    }
+    tableData() {
+      const key = ['username']
+      const sortedArr = [...this.users].sort( this.directionName === 'asc' ? (a, b) => {
+        if (a[key] < b[key]) {
+          return -1;
+        }
+
+        if (a[key] > b[key]) {
+          return 1;
+        }
+
+        return 0;
+        } : (a, b) => {
+        if (a[key] > b[key]) {
+          return -1;
+        }
+
+        if (a[key] < b[key]) {
+          return 1;
+        }
+
+        return 0;
+      }) 
+      const filtredArr = sortedArr.filter(item => {
+        return item.username.includes(this.search)
+      })
+      return filtredArr
+    },
   }
 }
 
@@ -95,3 +90,5 @@ export default{
 <style scoped>
 
 </style>
+
+//

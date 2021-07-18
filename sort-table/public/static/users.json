@@ -6,7 +6,7 @@
     "person": {
       "name": "Richard",
       "surname": "Black",
-      "birthday": "12.10.84"
+      "birthday": "12.10.1984"
     },
     "do_not_show_it_in_UI": "be-e-e-e"
   },
@@ -17,7 +17,7 @@
     "person": {
       "name": "Arnold",
       "surname": "Black",
-      "birthday": "07.10.83"
+      "birthday": "07.10.1983"
     },
     "do_not_show_it_in_UI": "be-e-e-e"
   },
@@ -28,7 +28,7 @@
     "person": {
       "name": "Goga",
       "surname": "Rusic",
-      "birthday": "02.10.84"
+      "birthday": "02.10.1984"
     },
     "do_not_show_it_in_UI": "be-e-e-e"
   },
@@ -39,7 +39,7 @@
     "person": {
       "name": "Richard",
       "surname": "Black",
-      "birthday": "12.10.84"
+      "birthday": "12.10.1984"
     },
     "do_not_show_it_in_UI": "be-e-e-e"
   },
@@ -50,7 +50,7 @@
     "person": {
       "name": "vanja",
       "surname": "bogatovich",
-      "birthday": "12.10.84"
+      "birthday": "12.10.1984"
     },
     "do_not_show_it_in_UI": "be-e-e-e"
   },
@@ -60,7 +60,7 @@
     "person": {
       "name": "John",
       "surname": "Johansen",
-      "birthday": "12.10.89"
+      "birthday": "12.10.1989"
     },
     "do_not_show_it_in_UI": "be-e-e-e"
   },
@@ -70,7 +70,7 @@
     "person": {
       "name": "Аня",
       "surname": "Потапова",
-      "birthday": "08.09.93"
+      "birthday": "08.09.1993"
     },
     "do_not_show_it_in_UI": "be-e-e-e"
   }
