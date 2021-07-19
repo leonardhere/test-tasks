@@ -3,7 +3,7 @@
     <h1>Таблица VUE</h1>
     <input type="text" v-model="search" placeholder="Поиск по сотрудникам">
     <table>
-      <tr><th>Пользователь <button v-on:click="sort('name')">Сортировать</button></th><th>Возраст <button v-on:click="sort('age')">Сортировать</button></th><th>Дата рождения</th><th>e-mail <button v-on:click="sort('email')">Сортировать</button></th><th>Номер телефона <button v-on:click="sort('phone')">Сортировать</button></th></tr>
+      <tr><th>Пользователь <button v-on:click="sort('name')">Сортировать</button></th><th>Возраст <button v-on:click="sort('age')">Сортировать</button></th><th>Дата рождения</th><th>e-mail <button v-on:click="sort('email')">Сортировать</button></th><th>Номер телефона <button v-on:click="sort('phone')">Сортировать</button></th><th>Person</th></tr>
       <Row
         :user="user"
         v-for="user of tableData"

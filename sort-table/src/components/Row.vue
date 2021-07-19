@@ -11,6 +11,9 @@
             <p v-if="user.phone">{{user.phone}}</p>
             <p v-else>Нет данных</p>
         </td>
+        <td>
+            {{user.person.name + ' ' + user.person.surname + ' ' + user.person.birthday}}
+        </td>
     </tr>
 </template>
 
