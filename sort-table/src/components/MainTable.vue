@@ -24,7 +24,6 @@ export default{
   },
     data() {
     return {
-      // sortedArr: JSON.parse(JSON.stringify(this.users)),
       directionName: 'asc',
       search: '',
     };
@@ -88,7 +87,21 @@ export default{
 </script>
 
 <style scoped>
-
+  button {
+      color: #fff;
+      text-decoration: none;
+      user-select: none;
+      background: gray;
+      padding: .5em 1.5em;
+      outline: none;
+      border-radius: 8px;
+      opacity: 0.7;
+      transition: 0.5s;
+  }
+  button:hover { 
+      background: black;
+      cursor: pointer; 
+  }
 </style>
 
 //

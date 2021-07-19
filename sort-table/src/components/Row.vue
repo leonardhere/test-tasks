@@ -12,7 +12,7 @@
             <p v-else>Нет данных</p>
         </td>
         <td>
-            {{user.person.name + ' ' + user.person.surname + ' ' + user.person.birthday}}
+            {{printArr}}
         </td>
     </tr>
 </template>
@@ -32,6 +32,9 @@ export default{
             const floorAge = Math.floor(age)
             return floorAge
         },
+        printArr: function() {
+            return Object.values(this.user.person).join(' ')
+        }
     },
 }
 
