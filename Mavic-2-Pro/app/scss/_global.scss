@@ -1,0 +1,44 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1
+h2
+h3
+h4
+h5
+h6{
+    margin: 0;
+    font-size: inherit;
+}
+
+body{
+ background-color: #0F1126;
+}
+
+
+.scroll__btn{
+    padding: 13px 0 30px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
