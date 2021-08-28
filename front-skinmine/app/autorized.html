@@ -7,6 +7,7 @@
     <title>Autorized</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -53,336 +54,371 @@
         <div class="main-banner-title">Хватить платить за скины! <br> Получай их бесплатно!</div>
         <a href="#" class="main-banner-button">Получить доступ</a>
     </div>
-    <div class="main__shop-space">
-        <div class="main__shop-space-filters">
-            <div class="main__shop-space-filters-price">
-                <div class="price">Цена</div>
-                <div class="minus">-</div>
+    <div class="main_space">
+        <div class="main__shop-space">
+            <div class="main__shop-space-filters">
+                <div class="main__shop-space-filters-price">
+                    <div class="price">Цена</div>
+                    <div class="minus">-</div>
+                </div>
+                <div class="price-inputs">
+                    <input type="text" placeholder="₽ 0.00">
+                    <div class="minus">-</div>
+                    <input type="text" placeholder="₽ ∞">
+                </div>
+                <div class="double-buttons">
+                    <a href="#" class="base">Базовые</a><a href="#" class="pro">Про</a>
+                </div>
+                <div class="properties">
+                    <div class="properties__item">
+                        <div class="propertirs__item-text">Тип</div>
+                        <div class="properties-sign">+</div>
+                    </div>
+                    <div class="properties__item">
+                        <div class="propertirs__item-text">Качество</div>
+                        <div class="properties-sign">+</div>
+                    </div>
+                    <div class="properties__item">
+                        <div class="propertirs__item-text">Цвет</div>
+                        <div class="properties-sign">+</div>
+                    </div>
+                    <div class="properties__item">
+                        <div class="propertirs__item-text">Другое</div>
+                        <div class="properties-sign">-</div>
+                    </div>
+                </div>
+                <div class="checkboxes__group">
+                    <div class="checkboxes__group-item">
+                        <input type="checkbox">
+                        <div class="checkboxes__group-item-text">StatTrak™</div>
+                    </div>
+                    <div class="checkboxes__group-item">
+                        <input type="checkbox">
+                        <div class="checkboxes__group-item-text">Стикеры</div>
+                    </div>
+                    <div class="checkboxes__group-item">
+                        <input type="checkbox">
+                        <div class="checkboxes__group-item-text">Скины пользователей</div>
+                    </div>
+                </div>
+                <a class="drop-button" href="#">Сбросить фильтры</a>
+                <a class="buy-button" href="#">Купить</a>
             </div>
-            <div class="price-inputs">
-                <input type="text" placeholder="₽ 0.00">
-                <div class="minus">-</div>
-                <input type="text" placeholder="₽ ∞">
+            <div class="main__shop-space-goods">
+                <div class="main__shop-space-goods-up">
+                    <a href="#" class="bydefault">По умолчанию</a>
+                    <div class="form-group has-search">
+                        <span class="form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Поиск...">
+                    </div>
+                    <a href="#jsModal" id="popup"class="shop-space-cart jsModalTrigger">
+                        <div class="cart-value">3 782 RUB</div>
+                    </a>
+                </div>
+                <div class="main__shop-space-goods-down">
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                            <div class="in-cart">
+                                <img src="images/in-cart.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                            <div class="no-have">
+                                <img src="images/no-item.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <a href="#jsModal-two" id="popup-two" class="jsModalTrigger-two card-item-more">Подробнее</a>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <a href="#jsModal-two" id="popup-two" class="jsModalTrigger-two card-item-more">Подробнее</a>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-inside">
+                            <div class="card-item-pics">
+                                <img src="images/weapon.png">
+                                <div class="stickers">
+                                    <img src="images/sticker-1.png" alt="">
+                                    <img src="images/sticker-2.png" alt="">
+                                    <img src="images/sticker-3.png" alt="">
+                                    <img src="images/sticker-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-item-text">
+                                <div class="card-item-plus">+ 167.95%</div>
+                                <div class="card-item-fn">FN / 0.0043</div>
+                                <div class="card-item-price">3 782 RUB</div>
+                            </div>
+                        </div>
+                        <div class="card-item-more">Подробнее</div>
+                    </div>
+                </div>
             </div>
-            <div class="double-buttons">
-                <a href="#" class="base">Базовые</a><a href="#" class="pro">Про</a>
-            </div>
-            <div class="properties">
-                <div class="properties__item">
-                    <div class="propertirs__item-text">Тип</div>
-                    <div class="properties-sign">+</div>
-                </div>
-                <div class="properties__item">
-                    <div class="propertirs__item-text">Качество</div>
-                    <div class="properties-sign">+</div>
-                </div>
-                <div class="properties__item">
-                    <div class="propertirs__item-text">Цвет</div>
-                    <div class="properties-sign">+</div>
-                </div>
-                <div class="properties__item">
-                    <div class="propertirs__item-text">Другое</div>
-                    <div class="properties-sign">-</div>
-                </div>
-            </div>
-            <div class="checkboxes__group">
-                <div class="checkboxes__group-item">
-                    <input type="checkbox">
-                    <div class="checkboxes__group-item-text">StatTrak™</div>
-                </div>
-                <div class="checkboxes__group-item">
-                    <input type="checkbox">
-                    <div class="checkboxes__group-item-text">Стикеры</div>
-                </div>
-                <div class="checkboxes__group-item">
-                    <input type="checkbox">
-                    <div class="checkboxes__group-item-text">Скины пользователей</div>
-                </div>
-            </div>
-            <a class="drop-button" href="#">Сбросить фильтры</a>
-            <a class="buy-button" href="#">Купить</a>
         </div>
-        <div class="main__shop-space-goods">
-            <div class="main__shop-space-goods-up">
-                <a href="#" class="bydefault">По умолчанию</a>
-                <div class="form-group has-search">
-                    <span class="form-control-feedback"></span>
-                    <input type="text" class="form-control" placeholder="Поиск...">
-                </div>
-                <a href="#jsModal" id="popup"class="shop-space-cart jsModalTrigger">
-                    <div class="cart-value">3 782 RUB</div>
-                </a>
-            </div>
-            <div class="main__shop-space-goods-down">
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                        <div class="in-cart">
-                            <img src="images/in-cart.png">
-                        </div>
+        <div class="select">
+            <div class="selectBtn" data-type="firstOption">Топ пользователей</div>
+            <div class="selectDropdown">
+                <div class="option" data-type="firstOption">
+                    <div class="select-pic">
+                        <img class="select-pic-img" src="images/ak-scin.png" alt="">
                     </div>
+                    <div class="option-nickname">Senor Rica 8888</div>
+                    <div class="option-type">AK-47 Vulcan</div>
                 </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                        <div class="no-have">
-                            <img src="images/no-item.png">
-                        </div>
+                <div class="option" data-type="secondOption">
+                    <div class="select-pic">
+                        <img class="select-pic-img" src="images/uzi-scin.png" alt="">
                     </div>
+                    <div class="option-nickname">Senor Rica 8888</div>
+                    <div class="option-type">AK-47 Vulcan</div>
                 </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
+                <div class="option" data-type="thirdOption">
+                    <div class="select-pic purple">
+                        <img class="select-pic-img" src="images/knife-scin.png" alt="">
                     </div>
-                    <a href="#jsModal-two" id="popup-two" class="jsModalTrigger-two card-item-more">Подробнее</a>
+                    <div class="option-nickname">Senor Rica 8888</div>
+                    <div class="option-type">AK-47 Vulcan</div>
                 </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
+                <div class="option" data-type="thirdOption">
+                    <div class="select-pic">
+                        <img class="select-pic-img" src="images/pistol-scin.png" alt="">
                     </div>
-                    <a href="#jsModal-two" id="popup-two" class="jsModalTrigger-two card-item-more">Подробнее</a>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-inside">
-                        <div class="card-item-pics">
-                            <img src="images/weapon.png">
-                            <div class="stickers">
-                                <img src="images/sticker-1.png" alt="">
-                                <img src="images/sticker-2.png" alt="">
-                                <img src="images/sticker-3.png" alt="">
-                                <img src="images/sticker-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-item-text">
-                            <div class="card-item-plus">+ 167.95%</div>
-                            <div class="card-item-fn">FN / 0.0043</div>
-                            <div class="card-item-price">3 782 RUB</div>
-                        </div>
-                    </div>
-                    <div class="card-item-more">Подробнее</div>
+                    <div class="option-nickname">Senor Rica 8888</div>
+                    <div class="option-type">AK-47 Vulcan</div>
                 </div>
             </div>
         </div>
@@ -605,6 +641,7 @@
       </footer>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/modal.js"></script>
+    <script src="js/dropdown.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slick.js"></script>
 </body>

@@ -661,6 +661,8 @@ body{
             margin-top: 50px;
             flex-wrap: wrap;
             display: flex;
+            height: 300px;
+            overflow-y: scroll;
             .card-item{
                 background: #333656;
                 border-radius: 3px;
@@ -738,6 +740,14 @@ body{
                     }
                 }
                 
+            }
+            &::-webkit-scrollbar{
+                width: 10px;
+                background-color: #f9f9fd;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: #9093B7;
+                cursor: pointer;
             }
         }
     }
@@ -1892,5 +1902,148 @@ body{
       }
     }
   }
+  
+
+// _____________________________________________
+
+.tutorial_block{
+    font-family: 'Roboto', sans-serif;
+    padding: 38px 70px 53px 63px;
+    border: 1px solid #333656;
+    margin-left: 12.03%;
+    margin-right: 13.06%;
+    margin-top: 46px;
+    .tutorlai_block-title{
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+        padding-bottom: 31px;
+        border-bottom: 1px solid #333656;
+    }
+    .tutorial_block-body{
+        margin-top: 43px;
+        .tutorial_block-body-section1{
+            padding-bottom: 35px;
+            border-bottom: 1px solid #333656;
+            .tutorial_block-body-item{
+                .tutorial_block-body-descr{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 27px;
+                    .tutorial_block-body-number{
+                        color: #9093B7;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(../images/opacity-ring.png);
+                        background-size: cover;
+                        padding: 12px 15px 12px 16px;
+                    }
+                    .tutorial_block-body-text{
+                        margin-left: 40px;
+                        color: #fff;
+                    }
+                }
+                .tutorial-block-body-pic{
+                    margin-bottom: 45px;
+                }
+            }
+        }
+        .tutorial_block-body-section2{
+            padding-top: 55px;
+            padding-bottom: 56px;
+            border-bottom: 1px solid #333656;
+            .section-title{
+                font-size: 24px;
+                line-height: 28px;
+                color: #FFFFFF;
+                margin-bottom: 39px;
+            }
+            .tutorial_block-body-inside{
+                .tutorial_block-line{
+                    display: flex;
+                    justify-content: space-between;
+                    .tutorial_block-body-item{
+                        width: 50%;
+                        .tutorial_block-body-descr{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 27px;
+                            .tutorial_block-body-number{
+                                color: #9093B7;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-image: url(../images/opacity-ring.png);
+                                background-size: cover;
+                                padding: 12px 15px 12px 16px;
+                            }
+                            .tutorial_block-body-text{
+                                margin-left: 40px;
+                                color: #fff;
+                            }
+                        }
+                        .tutorial-block-body-pic{
+                            margin-bottom: 45px;
+                        }
+                    }
+                }
+            }
+        }
+        .tutorial_block-body-section3{
+            padding-bottom: 56px;
+            .section-title{
+                font-size: 24px;
+                line-height: 28px;
+                color: #FFFFFF;
+                margin-bottom: 39px;
+                margin-top: 57px;
+            }
+            .tutorial_block-body-item{
+                width: 50%;
+                .tutorial_block-body-descr{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 27px;
+                    .tutorial_block-body-number{
+                        color: #9093B7;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(../images/opacity-ring.png);
+                        background-size: cover;
+                        padding: 12px 15px 12px 16px;
+                    }
+                    .tutorial_block-body-text{
+                        margin-left: 40px;
+                        color: #fff;
+                    }
+                }
+                .tutorial-block-body-pic{
+                    margin-bottom: 45px;
+                }
+            }
+            .tutorial__success{
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                padding: 16px 23px 15px 22px;
+                border: 1px solid #FF8818;
+                box-sizing: border-box;
+                border-radius: 5px;
+                width: max-content;
+            }
+        }
+    }
+}
+
+// __изменения с рейтингом__
+
+.main_space{
+    display: flex;
+    .main__shop-space{
+        margin-right: 1.5%;
+    }
+}
 
 @import "media";
