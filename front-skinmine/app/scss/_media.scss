@@ -59,3 +59,295 @@
         }
     }
 }
+
+@media(min-width: 769px) {
+    .header-mobile, .footer-mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .header-shop{
+        display: none;
+    }
+    .main-banner{
+        display: none;
+    }
+    .tutorlai_block-title{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 3%;
+        margin-top: 30px;
+        .header-mobile-logo{
+            margin-left: 16%;
+        }
+        .balance-and-avatar{
+            display: flex;
+            .balance-mobile{
+                padding-right: 50px;
+                .balance-mobile-value{
+                    color: #fff;
+                }
+                .balance-mobile-wait{
+                    color: #15E42A;
+                }
+            }
+        }
+        .nav {
+            -webkit-transition: left 0.5s ease;
+            -moz-transition: left 0.5s ease;
+            -ms-transition: left 0.5s ease;
+            -o-transition: left 0.5s ease;
+            transition: left 0.5s ease;
+            background:#161831;
+            color: white;
+            cursor: pointer;
+            font-size: 2rem;
+            height: 100vh;
+            left: -20rem;
+            padding: 6rem 2rem 2rem 2rem;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            .nav-title{
+                font-size: 23px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #333656;
+            }
+            .mobile-menu-list{
+                margin-top: 20px;
+                padding-bottom: 35px;
+                border-bottom: 1px solid #333656;
+                .mobile-menu-list-item{
+                    display: flex;
+                    align-items: center;
+                    .mobile-menu-list-item-text{
+                        font-size: 14px;
+                        margin-left: 20px;
+                        color: #fff;
+                    }
+                }
+            }
+            .mobile-menu-selects{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #333656;
+                .language-select, .select-money{
+                    background: #333656;
+                    border-radius: 5px;
+                    color: #9093B7;
+                    padding: 10px 15px;
+                }
+            }
+            .mobile-menu-social{
+                margin-top: 20px;
+                a{
+                    margin-right: 25px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            .menu-mobile-phone{
+                margin-top: 25px;
+                .menu-mobile-phone-text{
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    color: #fff;
+                }
+                .menu-mobile-phone-body{
+                    display: flex;
+                    align-items: center;
+                    .menu-mobile-phone-item{
+                        margin-right: 15px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                    .phone-number{
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .nav.expanded {
+            left: 0;
+            width: 80%;
+        }
+        .nav-toggle {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            height: 2rem;
+            position: fixed;
+            top: 2rem;
+            width: 3.6rem;
+            z-index: 2;
+            &:hover {
+                opacity: 0.8;
+            }
+            .nav-toggle-bar {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+                background: #9093B7;;
+                content: '';
+                height: 0.4rem;
+                width: 65%;
+                margin-top: 0;
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -ms-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    background: #9093B7;;
+                    content: '';
+                    height: 0.4rem;
+                    width: 65%;
+                    margin-top: 0.8rem;
+                }
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -ms-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    background: #9093B7;;
+                    content: '';
+                    height: 0.4rem;
+                    width: 65%;
+                    margin-top: -0.8rem;
+                }
+            }
+        }
+        .nav-toggle.expanded {
+            .nav-toggle-bar {
+                background: transparent;
+                &::after {
+                    background: #9093B7;;
+                    margin-top: 0;
+                    -ms-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+                &::before {
+                    background: #9093B7;;
+                    margin-top: 0;
+                    -ms-transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        
+    }
+    .tutorial_block{
+        margin-top: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-left: 0;
+        margin-right: 0;
+        border: none;
+        .calc-body{
+            .cale-body-title{
+                text-align: center;
+            }
+            .calc-body-select{
+                flex-direction: column;
+                .calc-body-select-device{
+                    width: 100%;
+                }
+                .calc-body-number{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    .calc-body-number-value{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+        .money-calc-block{
+            margin-top: 45px;
+            .money-table{
+                border: none;
+                flex-direction: column;
+                border-bottom: 1px solid #333656;
+                padding: 0px 13px;
+                padding-top: 25px;
+                .money-table-week, .money-table-month .money-table-day{
+                    border: none;
+                    border-bottom: 1px solid #333656;
+                    padding-top: 25px;
+                }
+                .money-table-day{
+                    border: none;
+                    border-bottom: 1px solid #333656;
+                    padding: 10px 50px 23px 50px;
+                    padding-top: 25px;
+                    
+                }
+            }
+            .money-table-descr{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .footer-mobile{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 25px;
+        background: #3E4162;
+        padding-top: 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        .footer-mobile-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 23px;
+                height: 23px;
+                margin-bottom: 5px;
+            }
+            .footer-mobile-item-text{
+                font-size: 12px;
+                color: #74779A;
+            }
+        }
+    }
+
+}

@@ -421,7 +421,7 @@ body{
     margin-left: 12.03%;
     margin-right: 13.06%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     color: #FFFFFF;
     background-image: url(../images/main-b.png);
@@ -429,24 +429,50 @@ body{
     padding: 29px 87px 28px 87px;
     margin-top: 64px;
     font-family: 'Roboto', sans-serif;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .main-banner-list{
+        margin-right: 40px;
+        .main-banner-list-item{
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            .main-banner-list-number{
+                margin-right: 20px;
+                padding: 10px;
+                color: black;
+                width: 26.87px;
+                display: flex;
+                align-items: center;
+                height: 26.87px;
+                justify-content: center;
+                background-image: url('../images/w-circle.png');
+            }
+        }
+    }
+    .banner-buttons{
+        .main-banner-button{
+            font-size: 14.596px;
+            line-height: 18px;
+            color: #FFFFFF;
+            background: linear-gradient(270deg, #FF8818 0%, #FC4492 100%);
+            border: 1px solid #FFB275;
+            box-sizing: border-box;
+            border-radius: 3.34848px;
+            padding: 18px 46px 18px 46px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button-two{
+            margin-top: 10px;
+        }
+    }
     .main-banner-title{
         font-size: 35px;
         line-height: 42px;
         font-style: normal;
         font-weight: normal;
-    }
-    .main-banner-button{
-        font-size: 14.596px;
-        line-height: 18px;
-        color: #FFFFFF;
-        background: linear-gradient(270deg, #FF8818 0%, #FC4492 100%);
-        border: 1px solid #FFB275;
-        box-sizing: border-box;
-        border-radius: 3.34848px;
-        padding: 18px 46px 18px 46px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 }
 
@@ -1913,6 +1939,7 @@ body{
     margin-left: 12.03%;
     margin-right: 13.06%;
     margin-top: 46px;
+    border-radius: 5px;
     .tutorlai_block-title{
         font-size: 30px;
         line-height: 35px;
@@ -2033,6 +2060,222 @@ body{
                 border-radius: 5px;
                 width: max-content;
             }
+        }
+    }
+}
+
+.tutorial_block{
+    border-radius: 5px;
+    .about_us_body{
+        .about_us_body-item{
+            display: flex;
+            padding: 50px 60px;
+            color: #fff;
+            border-bottom: 1px solid #333656;
+            .item-bloger{
+                display: flex;
+                .item-bloger-descr{
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    margin-right: 61px;
+                    .item-bloger-up{
+                        display: flex;
+                        align-items: center;
+                        .item-bloger-name-and-link{
+                            margin-left: 35px;
+                            .item-bloger-youtube{
+                                display: flex;
+                                align-items: center;
+                                margin-top: 15px;
+                                background-color: #E42828;
+                                border-radius: 5px;
+                                padding: 7px 20px;
+                                .item-bloger-youtube-text{
+                                    margin-left: 10px;
+                                    font-size: 14px;
+                                }
+                            }
+                            .item-bloger-tiktok{
+                                display: flex;
+                                align-items: center;
+                                margin-top: 15px;
+                                background-color: #FC4492;
+                                border-radius: 5px;
+                                padding: 7px 20px;
+                                .item-bloger-tiktok-text{
+                                    margin-left: 10px;
+                                    font-size: 14px;
+                                }
+                            }
+                            .item-bloger-instagram{
+                                display: flex;
+                                align-items: center;
+                                margin-top: 15px;
+                                background-color: #8D1AFF;;
+                                border-radius: 5px;
+                                padding: 7px 20px;
+                                .item-bloger-instagram-text{
+                                    margin-left: 10px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                    .item-bloger-down{
+                        margin-top: 58px;
+                        font-size: 14px;
+                    }
+                }
+                .item-bloger-video{
+                    width: 60%;
+                    display: flex;
+                    align-items: center;
+                    video{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tutorial_block{
+    border-radius: 5px;
+    .calc-body{
+        .cale-body-title{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            color: #fff;
+        }
+        .calc-body-select{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            .calc-body-select-device{
+                width: 50%;
+                .calc-body-select-device-title{
+                    color: #9093B7;
+                }
+                .calc-body-select-device-input{
+                    margin-top: 10px;
+                    select{
+                        background-color: #333656;
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 5px;
+                        color: #9093B7;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .calc-body-number{
+                .calc-body-number-title{
+                    color: #9093B7;
+                }
+                .calc-body-number-value{
+                    display: flex;
+                    margin-top: 10px;
+                    justify-content: space-between;
+                    align-items: center;
+                    .number-value{
+                        color: #fff;
+                    }
+                    .change-value-minus, .change-value-plus{
+                        padding: 10px 18px;
+                        border: 1px solid #333656;
+                        border-radius: 5px;
+                        color: #9093B7;
+                        transition: 0.3s all;
+                        &:hover{
+                            background-color: #333656;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .calc-body-buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 40px;
+            .calc-body-count{
+                display: flex;
+                align-items: center;
+                background: linear-gradient(90deg, #FF8818 0%, #FC4492 100%);
+                border-radius: 5px;
+                width: 81.5%;
+                justify-content: center;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                transition: 0.5s all;
+                .calc-body-count-text{
+                    margin-left: 15px;
+                    color: #fff;
+                }
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .calc-body-clean{
+                margin-top: 40px;
+                color: #9093B7;
+            }
+        }
+    }
+    .money-calc-block{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 114px;
+        .videocard-title{
+            margin-bottom: 18px;
+            color: #9093B7;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        .money-calc-block-title{
+            margin-bottom: 36px;
+            color: #fff;
+        }
+        .money-table{
+            padding: 23px 13px;
+            border: 1px solid #333656;
+            display: flex;
+            border-radius: 5px;
+            .money-table-day, .money-table-week, .money-table-month {
+                padding: 10px 50px 36px 50px;
+                border-right: 1px solid #333656;
+                .money-table-item-title{
+                    display: flex;
+                    justify-content: center;
+                    color: #fff;
+                }
+                .money-day-item-value, .money-week-item-value, .money-month-item-value{
+                    margin-top: 30px;
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 42px;
+                    background: linear-gradient(90deg, #FF8818 0%, #FC4492 100%);
+                    color: transparent;    
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+            .money-table-month{
+                border-right: none;
+            }
+        }
+        .money-table-descr{
+            color: #333656;
+            font-size: 12px;
+            margin-top: 27px;
+            width: 42%;
+            text-align: center;
         }
     }
 }
