@@ -418,7 +418,7 @@
             display: none;
         }
     }
-    .header-mobile{
+    .header-mobile-auth{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -431,7 +431,7 @@
         top: 0px;
         width: 100%;
         z-index: 2;
-        .header-mobile-logo{
+        .header-mobile-auth-logo{
             margin-left: 16%;
         }
         .balance-and-avatar{
@@ -862,7 +862,7 @@
 }
 
 @media(max-width: 425px) {
-    .header-mobile{
+    .header-mobile-auth{
         .balance-and-avatar{
             .balance-mobile{
                 padding-right: 30px;
@@ -872,7 +872,7 @@
 }
 
 @media(max-width: 375px) {
-    .header-mobile{
+    .header-mobile-auth{
         .balance-and-avatar{
             .balance-mobile{
                 padding-right: 20x;
