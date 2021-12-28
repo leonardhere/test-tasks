@@ -2289,4 +2289,206 @@ body{
     }
 }
 
+// __реферал-очка__
+
+.main__shop-space{
+    .main__shop-space-goods{
+        min-height: 700px;
+        .referal__body{
+            padding-top: 41px;
+            padding-left: 59px;
+            padding-right: 65px;
+            .referal-body-up{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .referal-nickname{
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-left: 25px;
+                    color: #FFFFFF;
+                }
+                .referal-inputs{
+                    display: flex;
+                    .referal-inputs-item{
+                        margin-left: 32px;
+                        margin-right: 92px;
+                        .referal-inputs-title{
+                            margin-bottom: 12px;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #FFFFFF;
+                        }
+                        input{
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #9093B7;
+                            background: #333656;
+                            border-radius: 3px;
+                            padding-top: 13px;
+                            padding-bottom: 12px;
+                            padding-left: 19px;
+                            padding-right: 80px;
+                            border: none;
+                        }
+                    }
+                }
+            }
+            .referal-body-down{
+                display: flex;
+                align-items: center;
+                min-height: 520px;
+               .referal-body-down-one{
+                    width: 30%;
+                    display: flex;
+                    align-items: end;
+                    margin-top: -50px;
+                   display: flex;
+                   flex-direction: column;
+                   .lines-ref-up{
+                    width: 157.5px;
+                    height: 131px;
+                    margin-bottom: 14px;
+                    margin-left: 56px;
+                    justify-content: space-between;
+                   }
+                   .referal-body-nickname{
+                        margin-right: 15%;
+                        padding: 21px 47px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 16px;
+                        width: 115%;
+                        color: #FFFFFF;
+                        background: linear-gradient(90deg, #FF8818 0%, #FC4492 100%);
+                        border-radius: 4px;
+                        &::after{
+                            content: url('../images/line-right.png');
+                            position: absolute;
+                            margin-left: 54px;
+                        }
+                   }
+                   .lines-ref-down{
+                       margin-top: 13.5px;
+                    width: 157.5px;
+                    height: 108.5px;
+                   }
+               }
+               .referal-body-two{
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                margin-left: 22px;
+                padding-top: 28px;
+                width: 100%;
+                position: relative;
+                .nickname-item{
+                    background: #333656;
+                    border-radius: 4px;
+                    padding: 10px 47px;
+                    margin-bottom: 28px;
+                    .nickname-percent{
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                    }
+                    .scincoins-value-item{
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                        margin-top: 6px;
+                    }
+                }
+                .last-item{
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    top: 0px;
+                    .last-item-one{
+                        background: #333656;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 4px;
+                        padding: 10px 47px;
+                        flex-direction: column;
+                        position: relative;
+                        &::after{
+                            content: url(../images/sublastitempic.png);
+                            position: absolute;
+                            left: 90px;
+                            bottom: -49px;
+                        }
+                        .nickname-percent{
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #FFFFFF;
+                        }
+                        .scincoins-value-item{
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #FFFFFF;
+                            margin-top: 6px;
+                        }
+                    }
+                    .last-item-two{
+                        display: flex;
+                        flex-direction: column;
+                        .last-item-two-up{
+                            display: flex;
+                            justify-content: space-between;
+                            .last-item-two-up-first{
+                                display: flex;
+                                align-items: center;
+                                margin-left: 56px;
+                                position: relative;
+                                .nickname-item{
+                                    margin-bottom: 0;
+                                    &::after{
+                                        position: absolute;
+                                        content: url(../images/twonicknames.png);
+                                        right: -46px;
+                                        bottom: 66px;
+                                    }
+                                }
+                            }
+                        }
+                        .last-item-two-down{
+                            display: flex;
+                            .last-item-two-down-first{
+                                margin-left: 56px;
+                                position: relative;
+                                .nickname-item{
+                                    &::after{
+                                        position: absolute;
+                                        content: url(../images/onenickname.png);
+                                        right: -45px;
+                                        bottom: 45px;
+                                    }
+                                }
+                            }
+                            .last-item-two-up-second{
+                                margin-left: 60px;
+                            }
+                            .last-item-two-down-second{
+                                margin-left: 60px;
+                            }
+                        }
+                    }
+                }
+                .items-one{
+                    width: 30%;
+                    position: absolute;
+                    bottom: -16px;
+                }
+               }
+            }
+        }
+    }
+}
+
 @import "media";

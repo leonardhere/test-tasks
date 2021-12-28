@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Person</title>
+    <title>Реферальная система</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,7 +130,7 @@
     </div>
     <div class="main__shop-space">
         <div class="main__shop-space-filters">
-            <a href="person.html" class="person-information active-sidebar">
+            <a href="person.html" class="person-information">
                 <img src="images/user-icon.png">
                 <div class="person-information-text">Личная <br> информация</div>
             </a>
@@ -138,50 +138,147 @@
                 <img src="images/transaction-icon.png">
                 <div class="transaction-information-text">Транзакции</div>
             </a>
-            <a href="transaction.html" class="transaction-information">
+            <a href="transaction.html" class="transaction-information active-sidebar">
               <img src="images/referal.png">
               <div class="transaction-information-text">Реферальная система</div>
           </a>
         </div>
         <div class="main__shop-space-goods">
             <div class="main__shop-space-goods-up">
-                <div class="goods-up-title">Личная информация</div>
+                <div class="goods-up-title">Реферальная система</div>
             </div>
-            <div class="main-space-card-down">
-                <div class="profile-card">
-                    <div class="profile-card-up">
-                        <div class="profile-card-up-title">Профиль</div>
-                        <a href="#" class="get-link">Получить ссылку</a>
+            <div class="referal__body">
+                <div class="referal-body-up">
+                    <div class="referal-avatar">
+                        <img src="images/avatar.png" alt="">
                     </div>
-                    <div class="card-middle">
-                        <img src="images/avatar.png">
-                        <div class="card-middle-nickname">Keenj1</div>
-                        <input type="text" placeholder="URL ссылка">
-                        <a href="#" class="card-middle-button">Применить</a>
-                    </div>
-                    <div class="card-footer">
-                        <div class="registration-date">Регестрация:  13.08.2017 </div>
-                        <div class="excharges">Обменов: 12</div>
+                    <div class="referal-nickname">Keenj1</div>
+                    <div class="referal-inputs">
+                        <div class="referal-inputs-item">
+                            <div class="referal-inputs-title">Ваша реферальная ссылка:</div>
+                            <input type="text" placeholder="1skins/keenj1/hf543gd">
+                        </div>
+                        <div class="referal-inputs-item">
+                            <div class="referal-inputs-title">Ваш реферал</div>
+                            <input type="text" placeholder="1skins/Seal7182/sbfdb42">
+                        </div>
                     </div>
                 </div>
-                <div class="contact-information">
-                    <div class="contact-information-title">Контактная информация</div>
-                    <div class="contact-information-item">
-                        <div class="contact-information-subtitle">E-mail:</div>
-                        <input type="text" placeholder="Не установлено">
-                        <div class="contact-information-buttons">
-                            <a href="#" class="person-pen"><img src="images/pen.png"></a>
-                            <a href="#" class="person-delete"><img src="images/trash.png"></a>
+                <!-- <div class="referal-body-down">
+                    <div class="body-down-up">
+                        <div class="boby-down-nickname">Keenj1</div>
+                        <div class="body-down-arrow-up">
+                            <img src="images/referal-up-line.png" alt="">
+                        </div>
+                        <div class="nicknames-five">
+                            <div class="nicknames-five-item">
+                                <div class="nickname-percent">Nickname 5%</div>
+                                <div class="scincoins-value-item">(500SC+25SC)</div>
+                            </div>
+                            <div class="nicknames-five-item">
+                                <div class="nickname-percent">Nickname 5%</div>
+                                <div class="scincoins-value-item">(10SC+0SC)</div>
+                            </div>
+                            <div class="nicknames-five-item">
+                                <div class="nickname-percent">Nickname 6%</div>
+                                <div class="scincoins-value-item">(50SC+0SC)</div>
+                            </div>
+                            <div class="nicknames-five-item">
+                                <div class="nickname-percent">Nickname 5%</div>
+                                <div class="scincoins-value-item">(20SC+25SC)</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-information-item">
-                        <div class="contact-information-subtitle">Telegram: </div>
-                        <input type="text" placeholder="Не установлено">
-                        <div class="contact-information-buttons">
-                            <a href="#" class="person-pen"><img src="images/pen.png"></a>
-                            <a href="#" class="person-delete"><img src="images/trash.png"></a>
+                    <div class="body-down-side">
+                        <div class="side-arrow">
+                            <img src="images/referal-side-line.png" alt="">
+                        </div>
+                        <div class="nicknames-side">
+                            <div class="nicknames-side-one">
+                                <div class="nicknames-five-item">
+                                    <div class="nickname-percent">Nickname 5%</div>
+                                    <div class="scincoins-value-item">(500SC+25SC)</div>
+                                </div>
+                                <div class="nicknames-five-item">
+                                    <div class="nickname-percent">Nickname 5%</div>
+                                    <div class="scincoins-value-item">(500SC+25SC)</div>
+                                </div>
+                            </div>
+                            <div class="nicknames-side-two">
+                                <div class="nicknames-five-item">
+                                    <div class="nickname-percent">Nickname 5%</div>
+                                    <div class="scincoins-value-item">(500SC+25SC)</div>
+                                </div>
+                                <div class="nicknames-five-item">
+                                    <div class="nickname-percent">Nickname 5%</div>
+                                    <div class="scincoins-value-item">(500SC+25SC)</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div> -->
+                <div class="referal-body-down">
+                  <div class="referal-body-down-one">
+                    <img class="lines-ref-up" src="images/group-lines-up.png" alt="">
+                    <div class="referal-body-nickname">Keenj1 (500SC+25SC)</div>
+                    <img class="lines-ref-down" src="images/group-lines-down.png" alt="">
+                  </div>
+                  <div class="referal-body-two">
+                    <div class="items-one">
+                      <div class="nickname-item">
+                        <div class="nickname-percent">Nickname 5%</div>
+                        <div class="scincoins-value-item">(500SC+25SC)</div>
+                      </div>
+                      <div class="nickname-item">
+                        <div class="nickname-percent">Nickname 5%</div>
+                        <div class="scincoins-value-item">(500SC+25SC)</div>
+                      </div>
+                      <div class="nickname-item">
+                        <div class="nickname-percent">Nickname 5%</div>
+                        <div class="scincoins-value-item">(500SC+25SC)</div>
+                      </div>
+                    </div>
+                    <div class="last-item">
+                      <div class="last-item-one">
+                        <div class="nickname-percent">Nickname 5%</div>
+                        <div class="scincoins-value-item">(500SC+25SC)</div>
+                      </div>
+                      <div class="last-item-two">
+                        <div class="last-item-two-up">
+                          <div class="last-item-two-up-first">
+                            <div class="nickname-item">
+                              <div class="nickname-percent">Nickname 5%</div>
+                              <div class="scincoins-value-item">(500SC+25SC)</div>
+                            </div>
+                          </div>
+                          <div class="last-item-two-up-second">
+                            <div class="nickname-item">
+                              <div class="nickname-percent">Nickname 5%</div>
+                              <div class="scincoins-value-item">(500SC+25SC)</div>
+                            </div>
+                            <div class="nickname-item">
+                              <div class="nickname-percent">Nickname 5%</div>
+                              <div class="scincoins-value-item">(500SC+25SC)</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="last-item-two-down">
+                          <div class="last-item-two-down-first">
+                            <div class="nickname-item">
+                              <div class="nickname-percent">Nickname 5%</div>
+                              <div class="scincoins-value-item">(500SC+25SC)</div>
+                            </div>
+                          </div>
+                          <div class="last-item-two-down-second">
+                            <div class="nickname-item">
+                              <div class="nickname-percent">Nickname 5%</div>
+                              <div class="scincoins-value-item">(500SC+25SC)</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
