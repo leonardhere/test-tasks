@@ -39,9 +39,14 @@
   <div class="right__block">
     <div class="right_column">
       <div>Процентная ставка</div>
-      <div class="percent-value"> {{ initial_fee }} <span>%</span> </div>
+      <div class="percent-value"> {{ initial_fee }} <span> %</span> </div>
       <div class="ra">Сумма к возврату</div>
-      <div class="payback-value"> {{ repayment() }} <span>₽</span></div>
+      <div class="payback-value"> {{ repayment() }} <span> ₽</span></div>
+    </div>
+    <div class="right_column-mobile">
+      <div class="comission">Комиссия: <span>{{loan()}} ₽</span></div>
+      <div class="date-repayment">Дата возврата кредита:<span>2 апреля</span></div>
+      <div class="total_sum-mobile">Сумма к возарату<span>{{repayment()}} ₽</span></div>
     </div>
     <a href="#" class="solution">Получить решение по займу</a>
   </div>
@@ -75,6 +80,9 @@ export default {
     repayment() {
       return Math.round(Number(this.amount) + (((this.amount / 100) / this.initial_fee) * this.term));
     },
+    loan() {
+      return (((this.amount / 100) / this.initial_fee) * this.term)
+    }
   },
 }
 </script>
@@ -244,10 +252,57 @@ input[type='range']::-webkit-slider-thumb{
   .right__block{
     width: 100%;
   }
+  .right_column-mobile{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 19px;
+  }
+  .comission, .date-repayment, .total_sum-mobile{
+    line-height: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #21405b;
+  }
+  .comission span, .date-repayment span, .total_sum-mobile span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2b86d4;
+    margin-left: 6px;
+  }
 }
+@media(min-width: 426px) {
+  .right_column-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 425px){
     .calc-main{
       padding: 30px 20px 50px;
+  }
+  .right_column{
+    display: none;
+  }
+}
+@media (max-width: 330px) {
+  .calculator__head {
+    padding: 30px 5px;
+  }
+  .right_column-mobile{
+    margin: 10px;
+  }
+  .solution{
+    padding: 15px 5px;
+  }
+    .comission, .date-repayment, .total_sum-mobile{
+    line-height: 30px;
+    font-size: 11px;
+  }
+  .comission span, .date-repayment span, .total_sum-mobile span {
+    font-size: 16px;
   }
 }
 </style>

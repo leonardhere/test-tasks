@@ -94,6 +94,9 @@ select {
   select {
     width: 45%;
   }
+  .calculator__head{
+    padding: 42px 25px;
+  }
 }
 @media (min-width: 426px) {
   .change_office{
@@ -119,10 +122,15 @@ select {
       border-radius: 100px;
       color: #ffffff;
       width: 100%;
-      padding: 24px 55px;
+      padding: 16px 55px;
   }
   .select-group-desktop{
     display: none;
+  }
+}
+@media (max-width: 330px) {
+    .change_office{
+    padding: 14px 45px;
   }
 }
 </style>
