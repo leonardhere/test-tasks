@@ -45,7 +45,7 @@
     </div>
     <div class="right_column-mobile">
       <div class="comission">Комиссия: <span>{{loan()}} ₽</span></div>
-      <div class="date-repayment">Дата возврата кредита:<span>2 апреля</span></div>
+      <div class="date-repayment">Дата возврата кредита:<span>{{payoffDate()}}</span></div>
       <div class="total_sum-mobile">Сумма к возарату<span>{{repayment()}} ₽</span></div>
     </div>
     <a href="#" class="solution">Получить решение по займу</a>
@@ -82,6 +82,16 @@ export default {
     },
     loan() {
       return (((this.amount / 100) / this.initial_fee) * this.term)
+    },
+    payoffDate() {
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0');
+      var yyyy = today.getFullYear();
+      today = mm + '/' + dd + '/' + yyyy;
+      var D = new Date(today);
+      D.setDate(D.getDate() + this.term);
+      return (('0' + D.getDate()).slice(-2) + '.' + ('0' + (D.getMonth() + 1)).slice(-2) + '.' + D.getFullYear());
     }
   },
 }
