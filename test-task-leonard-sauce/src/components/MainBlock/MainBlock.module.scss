@@ -1,0 +1,70 @@
+.mainBlock{
+    border: 1px solid black;
+    display: flex;
+    .mainBlockLeft{
+        width: 50%;
+        border: 1px solid black;
+        .mainBlockLeftWord{
+            border-bottom: 1px solid black;
+            img{
+                width: 100%;
+            }
+        }
+        .mainBlockLeftBottom{
+            padding: 20px;
+            border-top: 1px solid black;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .mainBlockLine{
+        padding: 19px 0;
+        .ticker{
+            .mainBlockLineItems{
+                display: flex;
+                .ticker__element{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin-left: 28px;
+                    }
+                    .mainBlockLineText{
+                        color: #000;
+                        text-align: center;
+                        font-family: Roboto;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 25.92px;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+                        margin-left: 28px;
+                    }
+                }
+            }
+        }
+    }
+    .mainBlockRight{
+        width: 50%;
+        .mainBlockRightTitle{
+            color: #000;
+            text-align: center;
+            // font-family: Roboto;
+            font-size: 58px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 64.512px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 25px 80px 15px 81px;
+        }
+        .mainBlockRightPic{
+            padding: 20px;
+            border-top: 1px solid black;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

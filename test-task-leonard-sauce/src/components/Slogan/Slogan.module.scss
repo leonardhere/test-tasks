@@ -1,0 +1,38 @@
+.SloganTitle{
+        color: #000;
+        text-align: center;
+        // font-family: Roboto;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72.576px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: 59px 29px;
+        display: flex;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        &::before{
+            display: block;
+            width: 225px;
+            height: 156px;
+            content: "";
+            background-image: url(../../images/scorpion-left.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 51px;
+        }
+        &::after{
+            display: block;
+            width: 225px;
+            height: 156px;
+            content: "";
+            background-image: url(../../images/scorpion-right.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 52px;
+        }
+    }
